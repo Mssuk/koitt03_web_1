@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url(https://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+/*초기화*/
+*{margin:0; padding: 0;font-family:  '맑은 고딕', 'Malgun Gothic','Noto Sans', Dotum, '굴림', arial, sans-serif;}
+ul,ol{list-style-type: none;}
+a{text-decoration: none;color:#202020;}
+/*헤더*/
+header{}
+#nav_up{width:100%; height: 35px; background: #202020;}
+#nav_up>ul{float: right;padding-right: 40px; width:450px; height: 25px;}
+#nav_up>ul>li{float: left; margin-left:20px;}
+#nav_up>ul>li>a{color:white;line-height: 30px; font-weight: bold;font-size:13px;}
+/*네비*/
+nav{width:100%; height: 81px; border-bottom: 1px solid #efefef;}
+nav>h1{width:100px; height: 30px;background: url("../images/ico_set.png") no-repeat -320px -385px;background-size: 800px 800px;position:relative;left: 40px; top:25px;}
+nav>ul:nth-child(2) {width:740px; height: 40px;margin:0 auto;position:relative; top:-9px;}
+nav>ul:nth-child(2)>li{float: left;margin-right: 40px;color:#101010;font-weight: 700; font-size:22px;line-height: 32px;}
+nav>ul:nth-child(2)>li>span{color:red; font-weight: bold;font-size:36px;position:relative;top:-18px;left:-9px;line-height:0;}
+/*아이콘*/
+nav>ul:nth-child(3) {width:160px; height: 52px;float:right; margin-top:-54px;box-sizing: border-box;}
+nav>ul:nth-child(3)>li{float: left;margin-right: 20px;color:#101010;font-weight: 700; font-size:12px;}
+nav>ul:nth-child(3)>li>a{background: url("../images/ico_set.png") no-repeat;background-size: 800px 800px;width:50px; height: 52px;display:inline-block;letter-spacing: -2px;color:#202020;}
+nav>ul:nth-child(3)>li:nth-child(1)>a{background-position:-578px -320px;}
+nav>ul:nth-child(3)>li:nth-child(2)>a{background-position:-621px -320px;}
+nav>ul:nth-child(3)>li>a>span{line-height: 72px;margin-left: 1px;}
+
+/*메인이미지*/
+section{}
+section>#main_section{width:100%; height: 900px;background: url("../images/img_main.jpg") center no-repeat;background-size: cover;}
+section>#main_section>div{width:80%;height:400px;font-size: 40px;margin: 0 auto;color:#fff;letter-spacing: -2px;}
+section>#main_section>div>h1{padding-top: 50px;letter-spacing: 10px;}
+section>#main_section>div>h2{font-size: 30px;}
+
+
+/*footer*/
+footer{width:100%; height: 213px;background-color: #202020;}
+#footer{width:1260px; height: 213px;margin: 0 auto;}
+#footer>div:nth-child(1){width:300px; height: 213px;float:left;box-sizing: border-box;padding: 30px 40px; color:#808080; font-size:12px; line-height: 100px;}
+#footer>div:nth-child(1)>h1>a{display:block; width:160px; height:48px; background: url("../images/ico_set.png") no-repeat -320px -320px;background-size: 800px 800px;}
+
+#footer>div:nth-child(2){width:700px; height: 213px;float:left;box-sizing: border-box;}
+#footer>div:nth-child(2)>ul{width:700px; height:50px;margin-bottom: 20px;}
+#footer>div:nth-child(2)>ul>li{float: left;height: 15px; line-height:11px; margin:30px 0px 10px; padding: 0px 23px;border-right: 1px solid #606060;}
+#footer>div:nth-child(2)>ul>li:first-child{padding-left: 0;}
+#footer>div:nth-child(2)>ul>li:last-child{border-right: 0;}
+#footer>div:nth-child(2)>ul>li.lime>a{color:#BDD61A;}
+#footer>div:nth-child(2)>ul>li>a{display:inline-block;color:white; font-weight: bold;font-size: 13px; }
+#footer>div:nth-child(2)>p{letter-spacing:-1px; font-weight:600; height:11px; display:inline-block;float:left; font-size:12px; color:#606060;padding-right:8px;border-right: 1px solid #606060;margin-right:10px;line-height: 10px;margin-bottom: 15px;}
+#footer>div:nth-child(2)>p.right_n{border-right:none;}
+#footer>div:nth-child(2)>p>a{font-weight: 600; text-decoration: underline;color: white; margin-left:5px; }
+
+#footer>div:nth-child(3){text-align:right; width:260px; height: 213px;float:left;box-sizing: border-box;padding: 28px 0 0; color:white; font-size:17px; line-height:20px;}
+#footer>div:nth-child(3)>p{float: left;margin-left: 10px;}
+#footer>div:nth-child(3)>p:first-child{text-align: right;width:210px; height:32px; box-sizing: border-box;font-size:13px; font-weight: bold;margin-bottom: 5px;}
+#footer>div:nth-child(3)>p:nth-child(2){margin-left: 27px;}
+#footer>div:nth-child(3)>#f_btn{width:88px; height: 32px; line-height: 28px; text-align: center;box-sizing: border-box;border: 1px solid white;display:inline-block; font-size:13px;margin:25px 38px 0;}

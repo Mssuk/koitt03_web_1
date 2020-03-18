@@ -1,0 +1,382 @@
+@import "style.css";
+@import "sub_notice.css";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,600,700,800&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto 100px auto;
+    padding: 0;
+    height: auto;
+    text-align: left;
+    color: #666;
+}
+
+#subtitle {
+    width: 100%;
+    padding: 38px 0 0;
+    overflow: hidden;
+}
+
+#subtitle ul {
+    float: right;
+}
+
+#subtitle ul li {
+    float: left;
+    font-size: 13px;
+    color: #5c5c5c;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 0 13px 0 10px;
+    background: url("../images/signup/bg_location_li.png") right 50% no-repeat;
+}
+
+#subtitle ul li:last-child {
+    color: #31261d;
+    padding: 0 0 0 10px;
+    background: none;
+}
+
+
+#sub-top {
+    padding: 40px 0 20px 0;
+    word-break: keep-all;
+}
+
+#sub-top h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+#loginContents {
+    margin: 0;
+}
+
+ul.join_step {
+    background: url("../images/signup/join_off_bg03.gif") repeat-x;
+    margin-bottom: 20px;
+    height: 100px;
+    border-left: solid 1px #e7e7e7;
+    overflow: hidden;
+
+}
+
+ul.join_step li {
+    float: left;
+    font-weight: 600;
+    color: #777;
+    padding: 21px 0;
+    background: url('../images/signup/join_off_bg.gif') no-repeat right 0;
+}
+
+
+ul.join_step li span {
+    font-size: 12px;
+    padding: 10px 0 7px 0;
+    display: block;
+}
+
+ul.join_step li p {
+    font-size: 20px;
+}
+
+
+ul.join_step .step_1 {
+    width: 29%;
+}
+
+ul.join_step .step_1 div {
+    margin-left: 12px;
+    padding-left: 55px;
+}
+
+ul.join_step .step_2 {
+    width: 25%;
+}
+
+ul.join_step li.sub {
+    background: url('../images/signup/join_off_bg04.gif') no-repeat right 0;
+}
+
+ul.join_step .step_2 div {
+    margin-left: 0;
+    padding-left: 35px;
+}
+
+ul.join_step .step_3 {
+    width: 25%;
+    color: #fff;
+    background: #8B8075 url('../images/signup/join_on_bg.gif') no-repeat right 0;
+}
+
+ul.join_step .step_3 div {
+    margin-left: 0;
+    padding-left: 35px;
+}
+
+ul.join_step .step_4 {
+    width: 21%;
+    background: url('../images/signup/join_off_bg02.gif') no-repeat right 0;
+}
+
+ul.join_step .step_4 div {
+    margin-left: 0;
+    padding-left: 38px;
+}
+
+#loginContents h3 {
+    font-size: 20px;
+    color: #31261D;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    word-break: keep-all;
+}
+
+#loginContents h3 span {
+    font-size: 12px;
+    color: #777;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    font-weight: normal;
+}
+
+fieldset.boardForm01 {
+    width: 100%;
+    border-top: 1px solid #d1d1d1;
+    font-size: 14px;
+    margin-bottom: 30px;
+
+}
+
+fieldset.boardForm01 dl {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    padding-left: 20%;
+}
+
+fieldset.boardForm01 dl dt {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -0.5em;
+    font-weight: 500;
+    color: #555555;
+}
+
+fieldset.boardForm01 dl dt.blt {
+    background: url("../images/signup/point_rs.png") left 5px no-repeat;
+    padding-left: 15px;
+}
+
+
+label {
+    vertical-align: middle;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='file'],
+input[type='search'] {
+    height: 23px;
+    line-height: 20px;
+    font-size: 13px;
+    margin: 0;
+    border: 1px solid #dcdcdc;
+    color: #666;
+    padding: 0 0 0 1%;
+    vertical-align: middle;
+    background: #fff;
+}
+
+
+fieldset.boardForm01 dl dd {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+fieldset.boardForm01 dl dd input[type='text'],
+fieldset.boardForm01 dl dd input[type='password'] {
+    width: 35%;
+    height: 28px;
+}
+
+input {
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.btn_member {
+    background: #6f6f6f;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #fff;
+    width: 80px;
+    border: 0;
+    cursor: pointer;
+}
+
+fieldset.boardForm01 ul {
+    margin-top: 5px;
+}
+
+fieldset.boardForm01 ul li {
+    padding-left: 6px;
+    font-size: 13px;
+    color: #777777;
+    margin-top: 5px;
+}
+
+fieldset.boardForm01 dl dd span.cmt {
+    font-size: 13px;
+    color: #777777;
+    margin-left: 3px;
+    font-weight: normal;
+}
+
+select {
+    height: 25px;
+    margin: 0;
+    border: 1px solid #dcdcdc;
+    padding: 0;
+    font-size: 13px;
+    vertical-align: middle;
+    color: #666;
+}
+
+fieldset.boardForm01 p.zipcode input[type='text'] {
+    width: 70px !important;
+    text-align: center;
+}
+
+a.btn_member {
+    padding: 6px 10px 7px 10px;
+    font-size: 12px;
+}
+
+fieldset.boardForm01 dl dd input[type='text'].full {
+    width: 98%;
+    margin-top: 5px;
+}
+
+fieldset.boardForm01 dl dd.phone input[type='text']{
+    width: 65px !important;
+    text-align: center;
+}
+
+fieldset.boardForm01 dl dd.birth select{
+    min-width: 0;
+    width: 60px;
+    height: 30px;
+}
+
+fieldset.boardForm01 dl dd.birth select:first-child{
+    width: 80px;
+}
+
+fieldset.boardForm01 p.check,
+fieldset.boardForm01 p.radio{
+    margin-top: 10px;
+}
+
+fieldset.boardForm01 dl dd input[type='radio']{
+    background: #fff;
+    border: solid 1px #c9c9c9;
+    height: 16px;
+    width: 16px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 10px;
+    padding: 0;
+}
+
+fieldset.boardForm01 dl dd input[type='radio']:checked{
+    background: #fff;
+    border: solid 1px #c9c9c9;
+    -webkit-appearance: button;
+}
+
+
+
+fieldset.boardForm01 p.check label, fieldset.boardForm01 p.radio label{
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+fieldset.boardForm01 dl dd label{
+    vertical-align: top;
+}
+
+fieldset.boardForm01 span.txtFr{
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+fieldset.boardForm01 dl dd.job select{
+    min-width: 0;
+    width: 36%;
+    height: 30px;
+}
+
+.hobby{
+    display: inline-block;
+}
+.hobby li{
+    float: left;
+    max-width: 120px;
+    width: 20%;
+    margin-bottom: 5px;
+}
+
+.btn_f li{
+    display: inline-block;
+    line-height: 100%;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+
+input[type='button']{
+    padding: 0;
+}
+
+.btnType03{
+    background: #fff;
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 10px;
+    border: solid 1px #ddd;
+    box-sizing: border-box;
+}
+
+.btnType01{
+    display: inline-block;
+    padding: 15px 20px;
+    background: #8A8D8F;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    box-sizing: border-box;
+    min-width: 75px;
+}
+fieldset.boardForm01 dl dd.email select{
+    min-width: 0;
+    height: 30px;
+}

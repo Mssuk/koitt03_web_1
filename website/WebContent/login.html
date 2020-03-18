@@ -5,6 +5,8 @@
 		<title>집밥을 특별하게, 쿡킷</title>
 		<link type="text/css" rel="stylesheet" href="css/style.css">
 		<link type="text/css" rel="stylesheet" href="css/login.css">
+		<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+		<script type="text/javascript" src="js/common.js" defer="defer"></script>
 	</head>
 	<body>
 		<header>
@@ -39,14 +41,14 @@
 			<article>
 				<form name="login_form" method="get" action="">
 					<ul>
-						<li><input type="radio" name="log_menu" id="m_log" checked="checked"><label for="m_log">회원로그인</label></li>
-						<li><input type="radio" name="log_menu" id="m_log2"><label for="m_log2">비회원 주문조회</label></li>
+						<li><input type="radio" name="log_menu" id="m_log"><label for="m_log" class="btn1">회원로그인</label></li>
+						<li><input type="radio" name="log_menu" id="m_log2"><label for="m_log2" class="btn2">비회원 주문조회</label></li>
 					</ul>
-					<div>
+					<div id="m_login"  class="btn1_div">
 						<input type="text" name="m_id" placeholder="CJ ONE 통합아이디 6~20자" min="6" max="20" alt="아이디를 입력해주세요">
 						<input type="text" name="m_pw" placeholder="비밀번호 영문,특수문자,숫자혼합 8~12자" min="8" max="12" alt="비밀번호를 입력해주세요">
 						<div>
-							<input type="radio" name="save_id" id="save_id"><label for="save_id"><span class="fontawesome-ok-sign"></span><span class="s_text">아이디저장</span></label>
+							<input type="radio" name="save_id" id="save_id"><label for="save_id"><span class="ok_sign"></span><span class="s_text">아이디저장</span></label>
 							<ul>
 								<li><a href="#">아이디 찾기</a></li>
 								<li><a href="#">비밀번호 찾기</a></li>
@@ -65,7 +67,7 @@
 							<li><span><a href="#">CJ ONE 통합회원 신규가입하기</a></span></li>
 						</ul>
 					</div>
-					<div>
+					<div id="m_login2"  class="btn2_div">
 						<input type="text" placeholder="주문번호 입력"  alt="주문번호를 입력해주세요">
 						<input type="text" placeholder="주문 비밀번호 입력"  alt="비밀번호를 입력해주세요">
 						<button class="log_btn">주문/배송 조회</button>
@@ -97,7 +99,7 @@
 				<p class="right_n">고객님은 안전거래를 위해 현금등으로 결제시 LG U+ 전자 결제의 매매보호(에스크로) 서비스를 이용하실 수 있습니다.<a href="#">가입 사실 확인</a></p>
 			</div>
 			<div>
-				<p>CJ그룹계열사 바로가기 <span class="entypo-down-open"></span></p>
+				<p id="f_menubtn">CJ그룹계열사 바로가기 <span class="entypo-down-open"></span></p>
 				<div id="hide_menu">
 					<ul>
 						<li>CJ그룹

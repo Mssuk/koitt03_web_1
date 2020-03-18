@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.on{border-bottom:3px solid black;color:#202020;}
+section>div{width:1180px; height: 170px;margin: 0 auto;box-sizing: border-box;margin-bottom: 140px;}
+section>div:nth-child(1){margin-bottom:0px; height: 170px; padding:72px 0 40px; font-size: 40px; font-weight: 700; color: #101010;letter-spacing: -1px;padding-bottom:0px;}
+section>ul:nth-child(2){width:1180px; height: 41px; margin: 0 auto;box-sizing: border-box;color:#606060;}
+/*상단탭 제목*/
+section>ul:nth-child(2)>li{float: left;margin-right:15px;letter-spacing: -2px;font-weight: bold;font-size:24px;padding-bottom:5px;}
+/*이벤트리스트*/
+section>div:nth-child(3) {height: 770px;}
+section>div:nth-child(3)>ul{width:100%;height: 724px; box-sizing: border-box;margin-top: 60px;}
+section>div:nth-child(3)>ul>li{width:380px; height: 300px;float: left;margin-right:20px; margin-bottom: 60px;}
+section>div:nth-child(3)>ul>li:nth-child(3),section>div:nth-child(3)>ul>li:nth-child(6){margin-right:0px;}
+section>div:nth-child(3)>ul>li>a{display:block;width:380px; height: 300px;}
+section>div:nth-child(3)>ul>li>a>img{width:100%;margin-bottom: 10px;}
+section>div:nth-child(3)>ul>li>a>span{font-weight: bold;letter-spacing: -1px;}
+section>div:nth-child(3)>ul>li>a>span:nth-child(2) {font-size: 10px; background: #101010;color:white;width:50px; height: 20px;display: inline-block;text-align: center;line-height: 17px;}
+section>div:nth-child(3)>ul>li>a>span:nth-child(3) {font-size: 13px;color:#606060;width:132px; height: 20px;text-align: center; margin-left: 7px;}
+section>div:nth-child(3)>ul>li>a>span:nth-child(4) {float:left; font-size:17px;width:380px; box-sizing:border-box; height: 20px;text-align:left;margin-top: 10px;}
+
+/*두번째 탭*/
+section>div:nth-child(4){height: 500px;display: none;}
+section>div:nth-child(4)>div{width:1180px; height: 25px;margin: 40px auto;font-weight: bold;}
+section>div:nth-child(4)>div>span.ok_sign{float:left; width:25px;height: 25px;display: inline-block;background: url("../images/ico_set.png") no-repeat; background-size: 800px 800px; background-position:-1px -40px;/*background-position: -29px -40px;*/}
+section>div:nth-child(4)>div:nth-child(2) {height: 214px;text-align: center;}
+section>div:nth-child(4)>div>span.ev_check_no{width:80px; height: 80px; display: inline-block;margin: 0 auto;margin:80px 0 30px;background: url("../images/ico_set.png") 0 -100px no-repeat;background-size: 800px 800px;}
+section>div:nth-child(4)>div>p{font-weight:bold; font-size:20px; }
+
+/*페이지번호&쓰기버튼*/
+section>div:nth-child(3)>div.page_num{height: 40px;}
+section>div:nth-child(3)>div.page_num>strong{margin:0 auto; display: block;width:40px; height: 40px;text-align: center;background:#202020; color:white; line-height: 40px;}
+section>div:nth-child(3)>div.page_btn>span{background-color:#BDD61A;font-weight:bold; float:right; width:130px; height: 40px;text-align: center;display: inline-block;box-sizing: border-box;margin-bottom: 40px;line-height: 40px;margin-left:10px;}
+section>div:nth-child(3)>div.page_btn>span>a{width:130px; height: 40px;display: inline-block;box-sizing: border-box;}

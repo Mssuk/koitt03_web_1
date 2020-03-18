@@ -1,0 +1,30 @@
+@charset "UTF-8";
+section>div{width:1180px; height: 170px;margin: 0 auto;box-sizing: border-box;margin-bottom: 140px;}
+section>div:nth-child(1){margin-bottom:0px; height: 170px; padding:72px 0 40px; font-size: 40px; font-weight: 700; color: #101010;letter-spacing: -1px;padding-bottom:0px;}
+
+/*상품전체틀*/
+section>div.food_pro{height:1240px; border-top:2px solid #101010;}
+section>div.food_pro>form>ul{width:100%; height: 1240px; box-sizing: border-box;padding: 30px 0;}
+section>div.food_pro>form>ul>li{width:268px; height: 564px;float: left;margin-right: 36px;}
+section>div.food_pro>form>ul>li:nth-child(4),section>div.food_pro>form>ul>li:nth-child(8) {margin-right: 0px;}
+
+/*상품설명*/
+section>div.food_pro>form>ul>li>a>img {margin-bottom: 20px;}
+section>div.food_pro>form>ul>li>a>ul.food_info{width:268px; height: 20px;color:#606060;}
+section>div.food_pro>form>ul>li>a>ul.food_info>li{float: left;font-size: 14px; font-weight: 600;padding:0 8px;border-left: 1px solid #e0e0e0;letter-spacing: -1px;}
+section>div.food_pro>form>ul>li>a>ul.food_info>li:nth-child(1){padding-left: 0; border-left: 0;}
+section>div.food_pro>form>ul>li>a>ul.food_info>li>span{background: url("../images/ev_ico_set.png") no-repeat -84px 0;background-size: 800px 800px; width:20px; height: 20px; float: right;}
+section>div.food_pro>form>ul>li>a>span{width:100%;display: inline-block;margin-bottom: 15px;letter-spacing: -1px;}
+section>div.food_pro>form>ul>li>a>span.food_title{font-size: 17px;color:#101010;font-weight: bold;margin-top: 5px;}
+section>div.food_pro>form>ul>li>a>span.food_price{font-size: 18px;color:#101010;font-weight: bold;}
+section>div.food_pro>form>ul>li>a>span.flag_new{font-size: 12px;color:#101010;font-weight: bold;background-color:#BDD61A; width:50px; height: 20px; text-align: center;line-height: 18px;}
+
+/*찜,장바구니담기*/
+section>div.food_pro>form>ul>li>button{width:40px;height:40px; border:none; border-radius:20px; padding:none; display: inline-block; background:  url("../images/ico_set.png") no-repeat ;background-size: 800px 800px;}
+section>div.food_pro>form>ul>li>button:hover{cursor: pointer;}
+section>div.food_pro>form>ul>li>button.interest{background-position: 0 -190px;}
+section>div.food_pro>form>ul>li>button.cart{background-position: -45px -190px;}
+
+/*페이지번호*/
+section>div.food_pro>form>div.page_num{height: 40px;}
+section>div.food_pro>form>div.page_num>strong{margin:0 auto; display: block;width:40px; height: 40px;text-align: center;background:#202020; color:white; line-height: 40px;}

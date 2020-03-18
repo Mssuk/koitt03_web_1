@@ -1,50 +1,58 @@
 $(function(){
     
+	//icon_check//
+	$('.ok_sign')
+	var aa=false;
+	$('.ok_sign').click(function(){
+		aa=!aa;
+		if(aa==true){
+			$(this).css('background-position','-29px -40px');
+		}
+		else{
+			$(this).css('background-position','-1px -40px');
+	    }
+    });
+	$('.s_text').click(function(){
+		aa=!aa;
+		if(aa==true){
+			$('.ok_sign').css('background-position','-29px -40px');
+		}
+		else{
+			$('.ok_sign').css('background-position','-1px -40px');
+	    }
+    });
     ////////////////////////// footer ////////////////////////////
-    
-    $('#hide_menu').hide();
-    
-    
-    $('#hide_menu').mouseenter(function(){
-       
+	$('#hide_menu').hide();
+	var bb=false;
+	
+	$('#f_menubtn').click(function(){
+		bb=!bb;
+		if(bb==false){
+			$('#hide_menu').hide();
+		}
+		else{
+	        $('#hide_menu').show();
+	    }
     });
+    ////////////////////////// section ////////////////////////////
     
-    $('#hide_menu').mouseleave(function(){
+    // tap//
+    
+    $('.btn1').addClass('on');
         
-    });
-    
-    ////////////////////////// contents ////////////////////////////
-    
-    // 로그인
-    
-    $('.titBtn1').addClass('on');
-        
-    $('.titBtn1').on('click',function(){
-        $('.titBtn2').removeClass('on');
+    $('.btn1').on('click',function(){
+        $('.btn2').removeClass('on');
         $(this).addClass('on');
-        $('.tableWrap').show();
-        $('.galleryWrap').hide();
+        $('.btn1_div').show();
+        $('.btn2_div').hide();
     });   
     
-    $('.titBtn2').on('click',function(){
-        $('.titBtn1').removeClass('on');
+    $('.btn2').on('click',function(){
+        $('.btn1').removeClass('on');
         $(this).addClass('on');
-        $('.tableWrap').hide();
-        $('.galleryWrap').show();
+        $('.btn1_div').hide();
+        $('.btn2_div').show();
     }); 
     
-    $('.tableWrap ul li:first').click(function(){
-        $('.pupupWrap').show();
-    });
-    
-    $('.pupupWrap .close').click(function(){
-        $('.pupupWrap').hide();
-    });
-    
-    // 배너, 바로가기
-    
-    
-
-
     
 });

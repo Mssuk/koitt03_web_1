@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>회원가입- 집밥을 특별하게, 쿡킷</title>
-    <link type="text/css" rel="stylesheet" href="css/signup.css">
+    <link type="text/css" rel="stylesheet" href="css/signinfo.css">
 
     <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="js/common.js" defer="defer"></script>
@@ -45,64 +45,34 @@
                 <li>HOME</li>
                 <li>회원가입</li>
                 <li>회원정보입력</li>
+                <li>가입정보확인</li>
+
             </ul>
         </div>
         <div id="sub-top">
-            <h3>회원가입</h3>
+            <h3>가입정보 확인</h3>
+            <span class="h_desc">회원님의 정보가 올바르게 입력되었는지 확인하세요</span>
         </div>
         <div id="loginContents">
 
-            <ul class="join_step">
-                <li class="step_1">
-                    <div>
-                        <span>STEP.1</span>
-                        <p>약관동의</p>
-                    </div>
-                </li>
-                <li class="step_2 sub">
-                    <div>
-                        <span>STEP.2</span>
-                        <p>본인확인</p>
-                    </div>
-                </li>
-                <li class="step_3">
-                    <div>
-                        <span>STEP.3</span>
-                        <p>회원정보입력</p>
-                    </div>
-                </li>
-                <li class="step_4">
-                    <div>
-                        <span>STEP.4</span>
-                        <p>회원가입완료</p>
-                    </div>
-                </li>
-            </ul>
-            <h3>필수 정보 입력
-                <span>(<span>*</span>
-            항목은 필수 입력입니다.)</span></h3>
+            <h3>기본 정보</h3>
 
             <form name="form1" method="post" action="">
                 <fieldset class="boardForm01">
                     <dl>
                         <dt class="blt">
-                            <label for="name">이름</label>
+                            <label>이름</label>
                         </dt>
                         <dd>
-                            <input type="text" id="name" name="name" value="홍길동">
+                            <span>홍길동</span>
                         </dd>
                     </dl>
                     <dl>
                         <dt class="blt">
-                            <label for="id">아이디</label>
+                            <label>아이디</label>
                         </dt>
                         <dd class="idCheck">
-                            <input type="text" id="id" name="userid">
-                            <input type="button" value="중복확인" class="btn_member">
-                            <ul class="cmt">
-                                <li>4~16자리의 영문, 숫자, 특수기호(_)만 사용하실 수 있습니다.</li>
-                                <li>첫 글자는 영문으로 입력해 주세요.</li>
-                            </ul>
+                            <span>Hongildong123</span>
                         </dd>
                     </dl>
                     <dl>
@@ -110,24 +80,7 @@
                             <label for="pwd1">비밀번호</label>
                         </dt>
                         <dd>
-                            <input type="password" id="pwd1" name="password">
-                            <br>
-                            <span class="cmt">
-                                영문, 숫자, 특수문자 중 2종류 조합 시 10자리 이상 입력
-                            </span>
-                            <br>
-                            <span class="cmt">
-                                영문, 숫자, 특수문자 모두 조합 시 8자리 이상 입력
-                            </span>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt class="blt">
-                            <label for="pwd2">비밀번호 확인</label>
-                        </dt>
-                        <dd>
-                            <input type="password" id="pwd2" name="confirm">
-                            <span class="cmt">비밀번호를 다시 한번 입력해 주세요.</span>
+                            3******dk
                         </dd>
                     </dl>
                     <dl>
@@ -135,24 +88,10 @@
                             <label>이메일</label>
                         </dt>
                         <dd class="email">
-                            <input type="text" id="email1" name="email1" style="width: 120px">
+                            <input type="text" id="email1" name="email1" style="width: 120px" disabled value="kildong">
                             <span>@</span>
-                            <input type="text" id="email2" name="email2" style="width: 150px">
-                            <select name="lstMail" class="select01" style="width: 150px"
-                                    onchange="document.form1.email2.focus();
-                              document.form1.email2.value =document.form1.lstMail[document.form1.lstMail.selectedIndex].value;
-                            ">
-                                <option>직접입력</option>
-                                <option value="gmail.com">지메일</option>
-                                <option value="naver.com">네이버</option>
-                                <option value="nate.com">네이트</option>
-                                <option value="hotmail.com">핫메일</option>
-                                <option value="paran.com">파란</option>
-                                <option value="em.com">엠팔</option>
-                                <option value="yahoo.com">야후</option>
-                                <option value="dreamwiz.com">드림위즈</option>
-                                <option value="hanmail.com">한메일(다음)</option>
-                            </select>
+                            <input type="text" id="email2" name="email2" style="width: 150px" disabled
+                                   value="gmail.com">
                         </dd>
                     </dl>
                     <dl>
@@ -161,13 +100,12 @@
                         </dt>
                         <dd>
                             <p class="zipcode">
-                                <input type="text" id="zip1" name="zip1" readonly="readonly">
+                                <input type="text" id="zip1" name="zip1" readonly="readonly" disabled value="25036">
                                 <span>-</span>
-                                <input type="text" id="zip2" name="zip2" readonly="readonly">
-                                <a class="btn_member">우편번호</a>
+                                <input type="text" id="zip2" name="zip2" readonly="readonly" disabled>
                             </p>
-                            <input type="text" id="address" class="full" name="addr1">
-                            <input type="text" id="address2" class="full" name="addr2">
+                            <input type="text" id="address" class="full" name="addr1" disabled value="서울 강동구 고덕로131">
+                            <input type="text" id="address2" class="full" name="addr2" disabled>
                         </dd>
                     </dl>
                     <dl>
@@ -175,11 +113,11 @@
                             <label>휴대전화</label>
                         </dt>
                         <dd class="phone">
-                            <input type="text" name="mnum1" value="010">
+                            <input type="text" name="mnum1" value="010" disabled>
                             <span>-</span>
-                            <input type="text" name="mnum2" value="1234">
+                            <input type="text" name="mnum2" value="1234" disabled>
                             <span>-</span>
-                            <input type="text" name="mnum3" value="1234">
+                            <input type="text" name="mnum3" value="1234" disabled>
 
                         </dd>
                     </dl>
@@ -188,7 +126,7 @@
                             <label>생년월일</label>
                         </dt>
                         <dd class="birth">
-                            <select name="byear" class="input">
+                            <select name="byear" class="input" disabled>
                                 <option value="0">선택</option>
                                 <option value="1999" selected>1999</option>
                                 <option value="2000">2000</option>
@@ -196,7 +134,7 @@
                                 <option value="2002">2002</option>
                             </select>
                             <span>년</span>
-                            <select name="bmonth" class="input">
+                            <select name="bmonth" class="input" disabled>
                                 <option value="0">선택</option>
                                 <option value="1" selected>1</option>
                                 <option value="2">2</option>
@@ -204,7 +142,7 @@
                                 <option value="4">4</option>
                             </select>
                             <span>월</span>
-                            <select name="bdate" class="input">
+                            <select name="bdate" class="input" disabled>
                                 <option value="0">선택</option>
                                 <option value="1" selected>1</option>
                                 <option value="2">2</option>
@@ -213,9 +151,9 @@
                             </select>
                             <span>일</span>
                             <p class="radio">
-                                <input name="calendar" type="radio" value="solar" checked>
+                                <input name="calendar" type="radio" value="solar" checked disabled>
                                 <label>양력</label>
-                                <input name="calendar" type="radio" value="lunar">
+                                <input name="calendar" type="radio" value="lunar" disabled>
                                 <label>음력</label>
                             </p>
                         </dd>
@@ -226,9 +164,9 @@
                         </dt>
                         <dd>
                             <p>
-                                <input type="radio" name="sex" value="M" checked>
+                                <input type="radio" name="sex" value="M" checked disabled>
                                 <label>남성</label>
-                                <input type="radio" name="sex" value="W">
+                                <input type="radio" name="sex" value="W" disabled>
                                 <label>여성</label>
                             </p>
                         </dd>
@@ -240,9 +178,9 @@
                         <dd>
                             <p>
                                 <span class="txtFr">이메일을 통한 상품 및 이벤트 정보 수신에 동의합니다.</span>
-                                <input type="radio" name="acceptInfo" value="y" checked>
+                                <input type="radio" name="acceptInfo" value="y" checked disabled>
                                 <label>예</label>
-                                <input type="radio" name="acceptInfo" value="n">
+                                <input type="radio" name="acceptInfo" value="n" disabled>
                                 <label>아니오</label>
                             </p>
                         </dd>
@@ -254,26 +192,23 @@
                         <dd>
                             <p>
                                 <span class="txtFr">문자를 통한 상품 및 이벤트 정보 수신에 동의합니다.</span>
-                                <input type="radio" name="acceptSMS" value="y" checked>
+                                <input type="radio" name="acceptSMS" value="y" checked disabled>
                                 <label>예</label>
-                                <input type="radio" name="acceptSMS" value="n">
+                                <input type="radio" name="acceptSMS" value="n" disabled>
                                 <label>아니오</label>
                             </p>
                         </dd>
                     </dl>
                 </fieldset>
 
-                <h3>분양회원 정보 입력
-                    <span>(다구좌 회원일 경우 가지고 계신 카드번호 중 하나를 입력해 주시면 됩니다)</span>
-                </h3>
+                <h3>분양회원 정보</h3>
                 <fieldset class="boardForm01">
                     <dl>
                         <dt>
                             <label>회원번호</label>
                         </dt>
                         <dd>
-                            <input type="text" name="membernum">
-                            <span class="cmt">하이픈(-)이나 띄어쓰기 없이 입력해 주시기 바랍니다.</span>
+                            <input type="text" name="membernum" value="1234521" disabled>
                         </dd>
                     </dl>
                     <dl>
@@ -281,8 +216,7 @@
                             <label>회원인증번호</label>
                         </dt>
                         <dd>
-                            <input type="password" name="memberpw">
-                            <span class="cmt">숫자 4자리 입력</span>
+                            <input type="password" name="memberpw" value="1234" disabled>
                         </dd>
                     </dl>
                 </fieldset>
@@ -294,9 +228,9 @@
                             <label>직업</label>
                         </dt>
                         <dd class="job">
-                            <select name="job">
-                                <option value selected>선택</option>
-                                <option value="회사원">회사원</option>
+                            <select name="job" disabled>
+                                <option value>선택</option>
+                                <option value="회사원" selected>회사원</option>
                                 <option value="자영업">자영업</option>
                                 <option value="프리랜서">프리랜서</option>
                                 <option value="전업주부">전업주부</option>
@@ -311,7 +245,7 @@
                             <p>
                                 <input type="radio" name="married" value="y">
                                 <label>예</label>
-                                <input type="radio" name="married" value="n">
+                                <input type="radio" name="married" value="n" checked disabled>
                                 <label>아니오</label>
                             </p>
                         </dd>
@@ -323,62 +257,62 @@
                         <dd>
                             <ul class="hobby">
                                 <li>
-                                    <input type="checkbox" name="hobby" value="컴퓨터" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="컴퓨터" onfocus="this.blur()" disabled>
                                     <label>컴퓨터/인터넷</label>
                                 </li>
 
                                 <li>
-                                    <input type="checkbox" name="hobby" value="영화" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="영화" onfocus="this.blur()"  disabled checked>
                                     <label>영화/비디오</label>
                                 </li>
 
                                 <li>
-                                    <input type="checkbox" name="hobby" value="음악" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="음악" onfocus="this.blur()" disabled>
                                     <label>음악</label>
                                 </li>
 
                                 <li>
-                                    <input type="checkbox" name="hobby" value="쇼핑" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="쇼핑" onfocus="this.blur()" disabled checked>
                                     <label>쇼핑</label>
                                 </li>
 
                                 <li>
-                                    <input type="checkbox" name="hobby" value="게임" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="게임" onfocus="this.blur()" disabled>
                                     <label>게임</label>
                                 </li>
 
                                 <li>
-                                    <input type="checkbox" name="hobby" value="문화/예술" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="문화/예술" onfocus="this.blur()" disabled checked>
                                     <label>문화/예술</label>
                                 </li>
 
                                 <li>
-                                    <input type="checkbox" name="hobby" value="육아/아동" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="육아/아동" onfocus="this.blur()" disabled>
                                     <label>육아/아동</label>
                                 </li>
 
                                 <li>
-                                    <input type="checkbox" name="hobby" value="요리" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="요리" onfocus="this.blur()" disabled checked>
                                     <label>요리</label>
                                 </li>
 
                                 <li>
-                                    <input type="checkbox" name="hobby" value="인테리어" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="인테리어" onfocus="this.blur()" disabled>
                                     <label>인테리어</label>
                                 </li>
 
                                 <li>
-                                    <input type="checkbox" name="hobby" value="레저/여가" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="레저/여가" onfocus="this.blur()" disabled>
                                     <label>레저/여가</label>
                                 </li>
 
                                 <li>
-                                    <input type="checkbox" name="hobby" value="건강/다이어트" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="건강/다이어트" onfocus="this.blur()" disabled>
                                     <label>건강/다이어트</label>
                                 </li>
 
                                 <li>
-                                    <input type="checkbox" name="hobby" value="패션/미용" onfocus="this.blur()">
+                                    <input type="checkbox" name="hobby" value="패션/미용" onfocus="this.blur()" disabled>
                                     <label>패션/미용</label>
                                 </li>
 
@@ -388,11 +322,11 @@
                 </fieldset>
                 <ul class="btn_f" style="text-align: center">
                     <li>
-                        <input type="button" onclick="" value="취소" class="btnType03"
+                        <input type="button" onclick="" value="수정" class="btnType03"
                                style="width: 120px; height: 50px; cursor: pointer">
                     </li>
                     <li>
-                        <input type="submit" value="저장" class="btnType01"
+                        <input type="submit" value="등록" class="btnType01"
                                style="border: 0; width: 120px; height: 50px; cursor: pointer">
                     </li>
                 </ul>
@@ -401,7 +335,6 @@
 
     </div>
 </section>
-
 
 <footer>
     <div id="footer">
@@ -484,5 +417,6 @@
         </div>
     </div>
 </footer>
+Z
 </body>
 </html>

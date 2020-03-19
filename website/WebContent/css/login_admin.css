@@ -1,12 +1,14 @@
 @charset "UTF-8";
 *{margin: 0; padding: 0}
-body{background-image: url("../images/bg_pattern.gif");}
-section{width:100%;height: 100%;margin-top:150px;box-sizing: border-box;}
+section{width:100%;height: 800px;padding-top:150px;box-sizing: border-box;background-image: url("../images/admin_login/bg_pattern.gif");}
 section>form{width:780px; height: 600px;margin:0 auto;}
-section>form>div#login_box{width:780px; height: 600px;background:url("../images/bg_LoginBox.png") no-repeat;position: relative;}
+section>form>div#login_box{width:780px; height: 600px;background:url("../images/admin_login/bg_LoginBox.png") no-repeat;position: relative;}
 section>form>div#login_box>div#loginField{width:380px; height:120px; position:absolute;left:298px;top:235px;}
+section>form>div#login_box>div#loginField>input{width:269px; height: 38px;background-size: contain;float: left; box-sizing:border-box; margin-bottom: 5px;padding:0 10px;}
+section>form>div#login_box>div#loginField>input:nth-child(1){background: url("../images/admin_login/bg_user.gif") no-repeat  96% 48%; }
+section>form>div#login_box>div#loginField>input:nth-child(2){background: url("../images/admin_login/bg_pw.gif") no-repeat 96% 48%; }
+section>form>div#login_box>div#loginField>a>button{color:white; font-weight:bold; width:100px; height: 80px; background: url("../images/admin_login/btn_login.png") no-repeat;float: right;margin-top: -43px;}
 
-
-footer{width:100%;height: 50px;}
+footer{width:100%;height: 80px;padding-top:30px;box-sizing: border-box;}
 footer>div#footer{width: 475px; height: 12px;margin: 0 auto;text-align: center;}
-footer>div#footer>p{font-size: 12px;}
+footer>div#footer>p{font-size: 12px;color:white;}

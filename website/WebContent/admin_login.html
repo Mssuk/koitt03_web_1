@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>관리자페이지</title>
-		<link type="text/css" rel="stylesheet" href="css/login_admin.css">
   		<link rel="stylesheet" href="css/admin_header.css">
+		<link type="text/css" rel="stylesheet" href="css/login_admin.css">
 	</head>
 	<body>
 		<header id="topfix">
@@ -75,16 +75,14 @@
 		<section>
 			<form action="" method="get" name="admin_login_field">
 				<div id="login_box">
-					
 					<div id="loginField">
 						<input type="text" placeholder="아이디를 입력하세오">
 						<input type="password" placeholder="비밀번호를 입력하세오">
-						<button></button>
-						<select>
-							<option></option>
-							<option></option>
-							<option></option>
-							<option></option>
+						<a href="admin_main.html"><button><span>Login</span></button></a>
+						<select name="login_level" id="log_level_box">
+							<option>권한 선택[Select]</option>
+							<option value="EMPLOYE" selected="selected">직원[EMPLOYE]</option>
+							<option value="TEACHER">강사[TEACHER]</option>
 						</select>
 					</div> 
 				</div>

@@ -83,7 +83,7 @@ ul, li {
 }
 
 .gnb_navi {
-    width: 100%;
+    width: 1200px;
     height: 49px;
     background-color: #7b7b7b;
     float: left;
@@ -150,7 +150,6 @@ ul, li {
 .gnb_navi > li a span.menuIcon6 {
     background-position: 0 -102px;
 }
-
 
 
 

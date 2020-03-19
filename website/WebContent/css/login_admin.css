@@ -1,0 +1,12 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0}
+body{background-image: url("../images/bg_pattern.gif");}
+section{width:100%;height: 100%;margin-top:150px;box-sizing: border-box;}
+section>form{width:780px; height: 600px;margin:0 auto;}
+section>form>div#login_box{width:780px; height: 600px;background:url("../images/bg_LoginBox.png") no-repeat;position: relative;}
+section>form>div#login_box>div#loginField{width:380px; height:120px; position:absolute;left:298px;top:235px;}
+
+
+footer{width:100%;height: 50px;}
+footer>div#footer{width: 475px; height: 12px;margin: 0 auto;text-align: center;}
+footer>div#footer>p{font-size: 12px;}

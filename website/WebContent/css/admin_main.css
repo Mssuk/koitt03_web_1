@@ -1,0 +1,156 @@
+@import "style.css";
+
+
+#topfix {
+    padding: 0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+}
+
+#header {
+    width: 100%;
+    height: 49px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10000;
+    background: #3d3d3d;
+}
+
+.logo_txt {
+    position: absolute;
+    margin: 11px 0 0 15px;
+}
+
+.logo_txt a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 2px;
+
+}
+
+.logo_txt span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ed5f00;
+}
+
+.top_menu {
+    width: 98%;
+    float: left;
+    margin-top: 10px;
+}
+
+.top_menu li {
+    color: #e7e7e7;
+    float: right;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.float_right {
+    float: right;
+    padding-left: 5px;
+}
+
+.table0 {
+    height: 25px;
+    margin-right: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 5px;
+
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#gnb {
+    position: relative;
+    width: 100%;
+    height: 49px;
+    background: #7b7b7b;
+    z-index: 9999;
+    padding: 0;
+
+}
+
+.gnb_navi {
+    width: 100%;
+    height: 49px;
+    background-color: #7b7b7b;
+    float: left;
+    padding: 0;
+}
+
+.gnb_navi > li {
+    float: left;
+    min-width: 160px;
+    position: relative;
+}
+
+.gnb_navi > p {
+    float: left;
+    width: 41px !important;
+
+}
+
+.gnb_navi > li a {
+    display: block;
+    padding: 14px 0;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0;
+    border-right: 1px #3d3d3d solid;
+}
+
+.gnb_navi span {
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.gnb_navi > li a span {
+    padding-left: 20px;
+    background: url('../images/admin_main/menuIcon.png') no-repeat;
+    font-family: '돋움', sans-serif;
+}
+
+.gnb_navi > li a span.menuIcon0 {
+    background-position: 0 -1px;
+}
+
+.gnb_navi > li a span.menuIcon1 {
+    background-position: 0 -18px;
+}
+
+.gnb_navi > li a span.menuIcon2 {
+    background-position: 0 -34px;
+}
+
+.gnb_navi > li a span.menuIcon3 {
+    background-position: 0 -51px;
+}
+
+.gnb_navi > li a span.menuIcon4 {
+    background-position: 0 -68px;
+}
+
+.gnb_navi > li a span.menuIcon5 {
+    background-position: 0 -85px;
+}
+
+.gnb_navi > li a span.menuIcon6 {
+    background-position: 0 -102px;
+}
+
+
+
+

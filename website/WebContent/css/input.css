@@ -1,8 +1,8 @@
-
 /*haad*/
 
 #border1{
-    width: 940px;   height: 1500px;  margin: 0 auto;
+    width: 940px;   height: 1250px;  margin: 0 auto;
+    box-sizing: border-box;
 
 }
 h3{
@@ -55,7 +55,7 @@ h3{
 #row2>dd>div{
     width: 680px;   height: 210px;
     float: right;   display: inline;
-    margin-top: 27px;
+    margin-top: 27px; 
 }
 #row2>dd>div>textarea{
     width: 680px;   height: 210px; box-sizing: border-box;
@@ -75,9 +75,11 @@ h3{
     width: 680px;   height: 60px;
     margin-top: 10px;
     background: #f7f7f7;
+    padding:12px 35px; box-sizing: border-box;
 }
 #row2>dd>div:nth-child(3)>ul>li{
     font-size: 12px;
+    list-style: disc;
 }
 /*세번째 row*/
 #row3{
@@ -99,6 +101,7 @@ h3{
 }
 #row3>dd>div>ul{
     margin-left:40px;  padding: 0;
+    list-style-type:disc;
 }
 #row3>dd>div>ul>li{
     font-size:12px ;
@@ -180,10 +183,11 @@ h3{
 #row4>dd>div>div:nth-child(3){
     width:680px;    height: 60px;
     margin: 0;
-
+	padding:0px 35px; box-sizing: border-box;
     background: #f7f7f7;
 }
 #row4>dd>div>div:nth-child(3)>ul{
+	list-style-type:disc;
     padding-top: 5px;
 }
 #row4>dd>div>div:nth-child(3)>ul>li{

@@ -1,0 +1,159 @@
+@import "admin_header.css";
+
+#admin_con{
+    margin-top: 98px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+#admin_con h1{
+    padding-left: 70px;
+}
+
+#container_title{
+    position: fixed;
+    top:98px;
+    left:0;
+    width: 100%;
+    line-height: 50px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 20px;
+    z-index: 99;
+}
+
+#left_side{
+    position: fixed;
+    height: 100%;
+}
+
+.side_ul{
+    position: relative;
+    height: 100%;
+    background: #ebebeb;
+    width: 50px;
+    display: block;
+}
+
+.side_ul li{
+}
+
+.side_ul button{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.side_ul li:first-child > button{
+    border-bottom: none;
+}
+
+.side_btn1{
+    background: url('../images/admin_main/menu-1.png') 50% 50% no-repeat white;
+}
+
+.side_btn2{
+    background: url('../images/admin_main/menu-2-1.png') 50% 50% no-repeat #ebebeb;
+}
+
+.side_btn3{
+    background: url('../images/admin_main/menu-3-1.png') 50% 50% no-repeat #ebebeb;
+}
+
+.side_btn4{
+    background: url('../images/admin_main/menu-4-1.png') 50% 50% no-repeat #ebebeb;
+}
+
+.side_btn5{
+    background: url('../images/admin_main/menu-6-1.png') 50% 50% no-repeat #ebebeb;
+}
+
+.side_btn6{
+    background: url('../images/admin_main/menu-7-1.png') 50% 50% no-repeat #ebebeb;
+}
+
+#real_contents{
+
+    margin-left: 180px;
+    margin-top: 70px;
+    position: absolute;
+    min-width: 1200px;
+    padding: 20px;
+}
+
+#real_contents h2{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#container_title{
+    background: white;
+}
+
+.local_desc{
+    margin: 10px 0 ;
+    min-width: 960px;
+    background: #eaeaea;
+    padding: 10px 20px;
+    line-height: 1.5em;
+    font-size: 12px;
+
+}
+
+.tbl_n1 table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.td_bool{
+    width: 70px;
+}
+
+.tbl_n1 thead th{
+    background: #777777;
+    color: #fff;
+    border: 1px solid #545454;
+    font-weight: normal;
+    padding: 8px 5px;
+}
+
+.tbl_n1 tbody td{
+    border: 1px solid #dcdcdc;
+    padding: 5px;
+}
+
+.btn_list{
+    text-align: right;
+    margin: 15px 0 ;
+}
+
+.btn_list a{
+    display: inline-block;
+    padding: 0 15px;
+    height: 28px;
+    background: crimson;
+    color:#fff;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 12px;
+    line-height: 2em;
+}
+
+article:nth-child(3) .td_point{
+    text-align: right;
+}
+
+#foot{
+
+    padding: 50px 25px;
+    color:black;
+    text-align: center;
+    font-size: 10px;
+}

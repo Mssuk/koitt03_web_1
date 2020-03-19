@@ -12,6 +12,17 @@ $(function(){
 			$(this).css('background-position','-1px -40px');
 	    }
     });
+	
+	$('.ok_sign2').click(function(){
+		aa=!aa;
+		if(aa==true){
+			$(this).css('background-position','-29px -40px');
+		}
+		else{
+			$(this).css('background-position','-1px -40px');
+	    }
+    });
+	
 	$('.s_text').click(function(){
 		aa=!aa;
 		if(aa==true){

@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: "돋움", verdana;
+	font-size: 12px;
+	font-weight: normal;
+	box-sizing: border-box;
+}
+
+div {
+	margin: 0px;
+	padding: 0px;
+	color: #666;
+	line-height: 160%;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #666;
+	text-decoration: none;
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+a:focus {
+	color: #e74c3c;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#wrap {
+	width: 100%;
+	min-width: 1520px;
+	border: 0px #ed5f00 solid;
+}
+
+#manage_main {
+	margin-top: 98px;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+
+div {
+	color: #666;
+	line-height: 160%;
+}
+
+#manage_main>div {
+	position: absolute;
+	width: 230px;
+	float: left;
+}
+
+/*좌측메뉴*/
+#leftArea {
+	height: 323px;
+	float: left;
+}
+
+#leftArea>div {
+	width: 200px;
+	overflow: visible;
+	border-right: 1px solid #c9c9c9;
+	border-bottom: 0px solid #c9c9c9;
+	top: 0px;
+	left: 0px;
+}
+
+#leftArea>div>h2 {
+	height: 70px;
+	line-height: 70px;
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: -1px;
+	text-align: center;
+	color: #7b7b7b;
+	background-color: #fff;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#leftArea>div>h2>em {
+	width: 50px;
+	height: 40px;
+	margin-top: 4px;
+	margin-left: -50px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+	background: url('../images/manage/icon_cate0.png') 0 0 no-repeat;
+}
+
+#leftArea ul {
+	display: block;
+	height: 100%;
+}
+
+#leftArea ul>li {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#leftArea ul>li {
+	display: block;
+	padding: 12px 0 8px 20px;
+	font-weight: bold;
+}
+
+#leftArea ul>li:hover a {
+	
+}
+
+#leftArea ul>li.on {
+	height: 39px;
+	background-color: #9f9f9f;
+}
+
+#leftArea ul>li.on a {
+	height: 39px;
+	color: #fff;
+	background-color: #9f9f9f;
+}
+
+#leftArea ul>li.on a span.icon-list-plus {
+	background-position: 0 -8px;
+}
+
+#leftArea ul>li a span.icon-list-plus {
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	width: 8px;
+	height: 8px;
+	margin: 5px 10px 0 0;
+	font-size: 0;
+	background: url('../images/manage/btn_plus.png') 0 0 no-repeat;
+}
+
+#leftArea ul>li.on a span.icon-list-minus {
+	background-position: 0 -8px;
+}
+
+#leftArea ul>li a span.icon-list-minus {
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	width: 8px;
+	height: 8px;
+	margin: 5px 10px 0 0;
+	font-size: 0;
+	background: url('../images/manage/btn_minus.png') 0 0 no-repeat;
+}
+
+#leftArea ul>.submenu {
+	height: 97px;
+	display: block;
+	padding: 15px 0 15px 0;
+	background: #fff;
+	border-bottom: 1px solid #c9c9c9;
+	display: block;
+}
+
+#leftArea ul>.submenu li {
+	height: 22px;
+	padding-left: 5px;
+	line-height: 22px;
+	padding-left: 5px;
+}
+
+#leftArea ul>.submenu li a {
+	height: 22px;
+	font-weight: normal;
+	padding-left: 15px;
+	margin: 0;
+}
+
+#leftArea ul>.submenu li.on a, #leftArea ul>.submenu li a:hover {
+	height: 22px;
+	text-decoration: underline;
+	color: #f15755;
+}
+
+#leftArea ul>.submenu img {
+	width: 3px;
+	height: 5px;
+}
+
+#leftArea ul>div:nth-child(4) {
+	height: 77px;
+	display: block;
+	padding: 15px 0 15px 0;
+	background: #fff;
+	border-bottom: 1px solid #c9c9c9;
+	display: block;
+}
+
+#leftArea ul>li:nth-child(3) {
+	padding: 0;
+	margin: 0;
+	height: 39px;
+	border-bottom: 1px solid #c9c9c9;
+	background-color: #ebebeb;
+}
+
+#leftArea ul>li:nth-child(3)>a {
+	display: block;
+	padding: 12px 0 8px 20px;
+	font-weight: bold;
+}
+
+#leftArea ul>div:nth-child(4) {
+	padding: 15px 0 15px 0;
+	background: #fff;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#leftArea ul>div:nth-child(4) a {
+
+}
+
+#leftArea ul>div:nth-child(5) {
+	position: absolute;
+	display: block;
+	width: 192px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 3px;
+	overflow: hidden;
+	border: 1px solid #5a8cc5;
+	background-color: #eaf4ff;
+}
+
+
+#leftArea ul>div:nth-child(5) li {
+	height: 30px;
+	line-height: 30px;
+}
+
+#leftArea ul>div:nth-child(5) li span {
+	float: left;
+	margin-left: 5px !important;
+}
+
+#leftArea ul>div:nth-child(5) li span a img {
+	width: 20px;
+	height: 20px;
+}

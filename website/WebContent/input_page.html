@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/input.css">
+    <title>Title</title>
+</head>
+<body>
+<div id="border1">
+      <header>
+          <h3>게시물 유형</h3>
+      </header>
+
+         <article>
+            <dl id="row1">
+                <dt>주문/상품 선택</dt>
+                <dd>
+                 <div>
+                     <span class="txt">
+                         문의할 주문번호 또는 상품을 선택
+                     </span>
+                     <button type="button">
+                         <span>조회</span>
+                     </button>
+                 </div>
+                </dd>
+            </dl>
+             <dl id="row2">
+                 <dt>문의 내용</dt>
+                 <dd>
+                     <div>
+                        <textarea cols="80" rows="5" placeholder="문의 내용을 입력" maxlength="1000"></textarea>
+                     </div>
+                     <div>
+                         <span id="count">0</span>/1000자
+                         카운트는 잠시 보류
+                     </div>
+                     <div>
+                         <ul>
+                             <li>고객님의 개인정보(이름,핸드폰 번호, 계좌번호 등) 입력 시 관리자에 의해 임의 삭제될 수 있습니다.</li>
+                             <li>개인정보 및 환불계좌번호 변경 등 개인정보 관련 문의는 행복고객센터로 연락 부탁 드립니다.</li>
+                         </ul>
+                     </div>
+                 </dd>
+             </dl>
+             <dl id="row3">
+                 <dt>첨부파일</dt>
+                 <dd>
+                     <div>
+                         <input type="file" accept="image/*">
+                     <ul>
+                         <li>최대 5장 등록 (PNG, JPEG, JPG, GIF 포맷)</li>
+                     </ul>
+                     </div>
+                 </dd>
+             </dl>
+             <dl id="row4">
+                 <dt>답변알림</dt>
+                 <dd>
+                     <div>
+                         <div>
+                             <span id="image"></span>
+                             <label for="email">E-mail 수신</label>
+                             <input type="text" id="email"><span>@</span><input type="text" id="email2">
+                             <select id="email_select">
+                                 <option value="0">직접입력</option>
+                                 <option value="naver.com">naver.com</option>
+                                 <option value="hamail.net">hamail.net</option>
+                                 <option value="nate.com">nate.com</option>
+                                 <option value="gmail.com">gmail.com</option>
+                             </select>
+                         </div>
+
+                         <div>
+                             <span id="image2"></span>
+                             <label for="sms">SMS</label>
+
+                             <select id="sms_select">
+                                 <option value="010" selected>010</option>
+                                 <option value="011">011</option>
+                                 <option value="016">016</option>
+                                 <option value="017">017</option>
+                                 <option value="018">018</option>
+                             </select>
+                             <input type="text" id="sms"><input type="text" id="sms">
+                         </div>
+                         <div>
+                             <ul>
+                                 <li> 알림수신을 위한 일회성 변경으로 회원 기본정보가 변경되지 않습니다.</li>
+                             </ul>
+                         </div>
+
+                     </div>
+                 </dd>
+             </dl>
+         </article>
+            <section>
+                <div id="bottom">
+                    <button type="button"><span>취소</span></button>
+                    <button type="button"><span>확인</span></button>
+                </div>
+
+            </section>
+
+        </div>
+
+</body>
+</html>

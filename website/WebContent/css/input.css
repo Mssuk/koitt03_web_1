@@ -1,0 +1,215 @@
+
+/*haad*/
+
+#border1{
+    width: 940px;   height: 1500px;  margin: 0 auto;
+
+}
+h3{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+/*첫번째 row*/
+#row1{
+    width: 940px;   height:80px;    margin: 10px auto;
+
+}
+#row1>dt{
+    width: 240px;   height: 24px;
+    margin-top: 27px;   font-weight: bold;
+    float: left;
+}
+#row1>dd>div{
+    margin-top: 20px;
+
+    width:680px;    height: 40px;
+    border: 1px solid black;
+    display: inline;
+    float: right;
+}
+.txt{
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    float: left;
+    padding-left:10px
+}
+#row1>dd>div>button{
+    display: inline-block;
+    float: right;
+    width: 90px;
+    height: 40px;
+}
+/*두번째 row*/
+#row2{
+    width: 940px;   height: 400px;
+    margin: 0 auto;
+}
+#row2>dt{
+    width: 255px;   height: 24px;
+    margin-top: 27px;   font-weight: bold;
+    float: left;
+
+
+}
+#row2>dd>div{
+    width: 680px;   height: 210px;
+    float: right;   display: inline;
+    margin-top: 27px;
+}
+#row2>dd>div>textarea{
+    width: 680px;   height: 210px; box-sizing: border-box;
+    padding: 10px 0 0 10px;
+}
+#row2>dd>div:nth-child(2){
+    width: 680px;
+    height: 60px;
+    float: right;
+
+    margin: 0 auto;
+}
+#count{
+
+}
+#row2>dd>div:nth-child(3){
+    width: 680px;   height: 60px;
+    margin-top: 10px;
+    background: #f7f7f7;
+}
+#row2>dd>div:nth-child(3)>ul>li{
+    font-size: 12px;
+}
+/*세번째 row*/
+#row3{
+    width: 940px;   height: 200px;
+    margin:0 auto;
+}
+#row3>dt{
+    width: 255px;   height: 24px;
+    margin-top: 27px;   font-weight: bold;
+    float: left;
+
+}
+#row3>dd>div{
+    width: 680px;   height: 140px;
+    display: inline;
+    float: right;
+
+    margin-top: 27px;
+}
+#row3>dd>div>ul{
+    margin-left:40px;  padding: 0;
+}
+#row3>dd>div>ul>li{
+    font-size:12px ;
+
+}
+#row3>dd>div>input{
+    list-style-type: none;
+    width: 128px;   height: 128px;
+    border: 1px solid black;
+}
+/*네번째 row*/
+#row4{
+    width: 940px;   height: 220px;
+    margin:0 auto;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+#row4>dt{
+    width: 255px;   height: 24px;
+    margin-top: 27px;   font-weight: bold;
+    float: left;
+
+}
+#row4>dd>div{
+    width: 680px;   height: 190px;
+    display: inline;
+    float: right;
+
+    margin-top: 27px;
+}
+/*이메일 란*/
+#row4>dd>div>div:nth-child(1){
+    width:680px;    height: 60px;
+    margin: 0;
+
+}
+#row4>dd>div>div:nth-child(1)>label{
+    display: inline;
+    padding: 0px;
+    width:98px;
+    height: 48px;
+}
+#row4>dd>div>div:nth-child(1)>select{
+     width:120px;
+     height: 46px;
+ }
+#row4>dd>div>div:nth-child(1)>input{
+    height: 38px;
+}
+#image {
+    display: inline-block;
+    width:25px; height: 26px;
+    background: url("../images/ico_set.png") no-repeat;
+    background-position: -1px -40px ;
+    background-size: 800px 800px;
+}
+/*sms 란*/
+#row4>dd>div>div:nth-child(2){
+    width:680px;    height: 60px;
+    margin: 0;
+
+}
+#image2 {
+    display: inline-block;
+    width:25px; height: 26px;
+    background: url("../images/ico_set.png") no-repeat;
+    background-position: -1px -40px ;
+    background-size: 800px 800px;
+}
+#row4>dd>div>div:nth-child(2)>select{
+    width:120px;
+    height: 46px;
+    margin: 0 10px 0 50px;
+}
+#row4>dd>div>div:nth-child(2)>input{
+    height: 38px;
+    margin-right: 15px;
+}
+#row4>dd>div>div:nth-child(3){
+    width:680px;    height: 60px;
+    margin: 0;
+
+    background: #f7f7f7;
+}
+#row4>dd>div>div:nth-child(3)>ul{
+    padding-top: 5px;
+}
+#row4>dd>div>div:nth-child(3)>ul>li{
+    margin-top: 20px;
+    font-size: 12px;
+}
+/*취소 / 확인*/
+#bottom{
+    width:940px ;   height: 56px;
+    margin-top: 50px;
+
+}
+#bottom>button{
+    display: inline-block;
+    width: 240px;   height: 56px;
+    margin-left: 8px;
+    position: relative;
+    text-align: center;
+    left: 200px;
+}
+#bottom>button:nth-child(2){
+    background: #BDD61A;
+}
+#bottom>button>span{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 700;
+}

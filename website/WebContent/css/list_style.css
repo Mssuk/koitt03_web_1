@@ -142,8 +142,15 @@ td{
     width:1180px ; height:96px; margin: 0 auto;
 }
 #pagination>div{
-     width: 1180px; height: 40px;
+     width: 1180px; height: 30px;
     box-sizing: border-box;
+}
+#pagination>div:nth-child(1)>button{
+	margin-top: 5px;
+	float: right;
+	width: 100px;
+	height: 50px;
+	font-size: 15px;
 }
 #pagination>div:nth-child(2){
     line-height: 40px;

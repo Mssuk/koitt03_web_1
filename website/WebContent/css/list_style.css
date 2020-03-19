@@ -42,7 +42,7 @@ td{
     margin: 0 auto;
     width: 400px;
 }
-span{
+#pagination>div:nth-child(2)>span{
     margin: 20px;
 }
 

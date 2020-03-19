@@ -2,9 +2,6 @@
 @import "sub_notice.css";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,600,700,800&display=swap');
 
-* {
-    font-family: 'Noto Sans KR', sans-serif;
-}
 
 #container {
     max-width: 1000px;

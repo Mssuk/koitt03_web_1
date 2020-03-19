@@ -1,9 +1,7 @@
 @charset "UTF-8";
-section>div{width:1180px; height: 170px;margin: 0 auto;box-sizing: border-box;margin-bottom: 140px;}
-section>div:nth-child(1){margin-bottom:0px; height: 170px; padding:72px 0 40px; font-size: 40px; font-weight: 700; color: #101010;letter-spacing: -1px;padding-bottom:0px;}
 
 /*상품전체틀*/
-section>div.food_pro{height:1240px; border-top:2px solid #101010;}
+section>div.food_pro{width:1180px; height:1240px; border-top:2px solid #101010;margin: 0 auto;box-sizing: border-box;margin-bottom: 140px;}
 section>div.food_pro>form>ul{width:100%; height: 1240px; box-sizing: border-box;padding: 30px 0;}
 section>div.food_pro>form>ul>li{width:268px; height: 564px;float: left;margin-right: 36px;}
 section>div.food_pro>form>ul>li:nth-child(4),section>div.food_pro>form>ul>li:nth-child(8) {margin-right: 0px;}

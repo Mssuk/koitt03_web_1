@@ -25,23 +25,23 @@ section {
 	margin: 0 auto;
 }
 
-section>div {
+section>div.view {
 	width: 100%;
 	padding: 72px 0 140px;
 }
 
-section>div>div>h1 {
+section>div.view>div>h1 {
 	color: #101010;
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 56px;
 }
 
-section>div>div>div {
+section>div.view>div>div {
 	margin-top: 46px;
 }
 
-section>div>div:nth-child(1)>div>div:nth-child(1) {
+section>div.view>div:nth-child(1)>div>div:nth-child(1) {
 	position: relative;
 	padding: 32px 24px;
 	background-color: #f7f7f7;
@@ -49,14 +49,14 @@ section>div>div:nth-child(1)>div>div:nth-child(1) {
 	background-color: #f7f7f7;
 }
 
-section>div>div:nth-child(1)>div>div:nth-child(1)>h2 {
+section>div.view>div:nth-child(1)>div>div:nth-child(1)>h2 {
 	font-size: 28px;
 	line-height: 42px;
 	font-weight: 700;
 	color: #101010;
 }
 
-section>div>div:nth-child(1)>div>div:nth-child(1)>h2>span {
+section>div.view>div:nth-child(1)>div>div:nth-child(1)>h2>span {
 	display: block;
 	padding-top: 6px;
 	font-size: 16px;
@@ -65,19 +65,19 @@ section>div>div:nth-child(1)>div>div:nth-child(1)>h2>span {
 	font-weight: 400px;
 }
 
-section>div>div:nth-child(1)>div>div:nth-child(1)>div {
+section>div.view>div:nth-child(1)>div>div:nth-child(1)>div {
 	position: absolute;
 	top: 42px;
 	right: 24px;
 }
 
-section>div>div:nth-child(1)>div>div:nth-child(1)>div>a {
+section>div.view>div:nth-child(1)>div>div:nth-child(1)>div>a {
 	position: relative;
 	width: auto;
 	height: auto;
 }
 
-section>div>div:nth-child(1)>div>div:nth-child(1)>div>a>span {
+section>div.view>div:nth-child(1)>div>div:nth-child(1)>div>a>span {
 	display: block;
 	position: block;
 	padding-left: 28px;
@@ -87,7 +87,7 @@ section>div>div:nth-child(1)>div>div:nth-child(1)>div>a>span {
 	font-weight: 400;
 }
 
-section>div>div:nth-child(1)>div>div:nth-child(1)>div>a>span::before {
+section>div.view>div:nth-child(1)>div>div:nth-child(1)>div>a>span::before {
 	content: '';
 	display: block;
 	position: absolute;
@@ -100,12 +100,12 @@ section>div>div:nth-child(1)>div>div:nth-child(1)>div>a>span::before {
 	background-position: -454px -80px;
 }
 
-section>div>div:nth-child(1)>div>div:nth-child(2) {
+section>div.view>div:nth-child(1)>div>div:nth-child(2) {
 	width: 1180px;
 	vertical-align: middle;
 }
 
-section>div>div:nth-child(1)>div>ul:nth-child(3) {
+section>div.view>div:nth-child(1)>div>ul:nth-child(3) {
 	width: 100%;
 	margin-top: 40px;
 	padding-bottom: 20px;
@@ -114,7 +114,7 @@ section>div>div:nth-child(1)>div>ul:nth-child(3) {
 	text-align: center;
 }
 
-section>div>div:nth-child(1)>div>ul:nth-child(3)>li {
+section>div.view>div:nth-child(1)>div>ul:nth-child(3)>li {
 	position: relative;
 	display: inline-block;
 	margin-bottom: 20px;
@@ -127,25 +127,25 @@ section>div>div:nth-child(1)>div>ul:nth-child(3)>li {
 	text-align: left;
 }
 
-section>div>div:nth-child(1)>div>ul:nth-child(3)>li::before {
+section>div.view>div:nth-child(1)>div>ul:nth-child(3)>li::before {
 	content: '';
 	display: block;
 	overflow: hidden;
 }
 
-section>div>div:nth-child(1)>div>ul:nth-child(3)>li>p {
+section>div.view>div:nth-child(1)>div>ul:nth-child(3)>li>p {
 	margin-top: 25px;
 	font-size: 22px;
 	line-height: 52px;
 	color: #8d4d2e;
 }
 
-section>div>div:nth-child(1)>div>ul:nth-child(3)>li>p:nth-child(1)>em {
+section>div.view>div:nth-child(1)>div>ul:nth-child(3)>li>p:nth-child(1)>em {
 	font-size: 52px;
 	font-weight: bold;
 }
 
-section>div>div:nth-child(1)>div>ul:nth-child(3)>li>p:nth-child(2) {
+section>div.view>div:nth-child(1)>div>ul:nth-child(3)>li>p:nth-child(2) {
 	width: 225px;
 	margin-top: 1px;
 	font-size: 23px;
@@ -158,7 +158,7 @@ section>div>div:nth-child(1)>div>ul:nth-child(3)>li>p:nth-child(2) {
 	text-overflow: ellipsis;
 }
 
-section>div>div:nth-child(1)>div>ul:nth-child(3)>li>p:nth-child(3) {
+section>div.view>div:nth-child(1)>div>ul:nth-child(3)>li>p:nth-child(3) {
 	margin-top: 8px;
 	width: 225px;
 	line-height: 20px;
@@ -169,7 +169,7 @@ section>div>div:nth-child(1)>div>ul:nth-child(3)>li>p:nth-child(3) {
 	text-overflow: ellipsis;
 }
 
-section>div>div:nth-child(1)>div>ul:nth-child(3)>li>a:nth-child(4) {
+section>div.view>div:nth-child(1)>div>ul:nth-child(3)>li>a {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -180,7 +180,7 @@ section>div>div:nth-child(1)>div>ul:nth-child(3)>li>a:nth-child(4) {
 	background: #fff;
 }
 
-section>div>div:nth-child(1)>div>ul:nth-child(3)>li>a:nth-child(4)::before{
+section>div.view>div:nth-child(1)>div>ul:nth-child(3)>li>a::before{
 	content:'';
 	position: absolute;
 	top: 50%;
@@ -192,7 +192,7 @@ section>div>div:nth-child(1)>div>ul:nth-child(3)>li>a:nth-child(4)::before{
 	transform: translate(-50%, -50%);
 	}
 
-section>div>div:nth-child(1)>div>ul:nth-child(3)>li>a:nth-child(4)>span {
+section>div.view>div:nth-child(1)>div>ul:nth-child(3)>li>a>span {
 	display: block;
 	line-height: 51px;
 	padding-right: 35px;
@@ -202,13 +202,13 @@ section>div>div:nth-child(1)>div>ul:nth-child(3)>li>a:nth-child(4)>span {
 	overflow: hidden;
 }
 
-section>div>div:nth-child(1)>div>div:nth-child(4) {
+section>div.view>div:nth-child(1)>div>div:nth-child(4) {
 	height: 100px;
 	margin-top: 30px;
 	text-align: center;
 }
 
-section>div>div:nth-child(1)>div>div:nth-child(4)>a:nth-child(1) {
+section>div.view>div:nth-child(1)>div>div:nth-child(4)>a:nth-child(1) {
 	width: 240px;
 	height: 56px;
 	margin-right: 10px;
@@ -222,7 +222,7 @@ section>div>div:nth-child(1)>div>div:nth-child(4)>a:nth-child(1) {
 	background-color: #BDD61A;
 }
 
-section>div>div:nth-child(1)>div>div:nth-child(4)>a:nth-child(2) {
+section>div.view>div:nth-child(1)>div>div:nth-child(4)>a:nth-child(2) {
 	width: 240px;
 	height: 56px;
 	margin-left: 10px;

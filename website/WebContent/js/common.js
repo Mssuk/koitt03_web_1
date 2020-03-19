@@ -1,7 +1,6 @@
 $(function(){
     
 	//icon_check//
-	$('.ok_sign')
 	var aa=false;
 	$('.ok_sign').click(function(){
 		aa=!aa;
@@ -12,10 +11,10 @@ $(function(){
 			$(this).css('background-position','-1px -40px');
 	    }
     });
-	
+	var cc=false;
 	$('.ok_sign2').click(function(){
-		aa=!aa;
-		if(aa==true){
+		cc=!cc;
+		if(cc==true){
 			$(this).css('background-position','-29px -40px');
 		}
 		else{

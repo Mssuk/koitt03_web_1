@@ -1,9 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+ul {
+	list-style-type: none;
+	list-style: none;
+}
+
+em {
+	font-style: normal;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+div {
+	display: block;
+}
+
+img{
+	border: 0 none;
+}
 section>div {
 	width: 1180px;
 	min-height: 100%;
 	margin: 0 auto;
-	padding: 72px 0 50px;
+	padding: 72px 0 65px;
 }
 
 section>div>div {
@@ -37,6 +63,7 @@ section>div>div>div:nth-child(2)>ul>li {
 	width: initial;
 	text-align: center;
 	vertical-align: top;
+	
 }
 
 section>div>div>div:nth-child(2)>ul>li>a {

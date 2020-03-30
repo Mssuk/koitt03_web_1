@@ -6,7 +6,8 @@
 		<link type="text/css" rel="stylesheet" href="css/style.css">
 		<link type="text/css" rel="stylesheet" href="css/login.css">
 		<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
-		<script type="text/javascript" src="js/common.js" defer="defer"></script>
+		<script type="text/javascript" src="js/login_ch.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
 	</head>
 	<body>
 		<header>
@@ -47,7 +48,7 @@
 					</ul>
 					<div id="m_login"  class="btn1_div">
 						<input type="text" name="m_id" placeholder="CJ ONE 통합아이디 6~20자" min="6" max="20" alt="아이디를 입력해주세요">
-						<input type="text" name="m_pw" placeholder="비밀번호 영문,특수문자,숫자혼합 8~12자" min="8" max="12" alt="비밀번호를 입력해주세요">
+						<input type="password" name="m_pw" placeholder="비밀번호 영문,특수문자,숫자혼합 8~12자" min="8" max="12" alt="비밀번호를 입력해주세요">
 						<div>
 							<input type="radio" name="save_id" id="save_id"><label for="save_id"><span class="ok_sign"></span><span class="s_text">아이디저장</span></label>
 							<ul>
@@ -55,7 +56,7 @@
 								<li><a href="#">비밀번호 찾기</a></li>
 							</ul>	
 						</div>
-						<button class="log_btn">로그인</button>
+						<input type="button" class="log_btn" onclick="check_login()" value="로그인">
 						<ul class="else_login">
 							<li><a href="#"></a></li>
 							<li><a href="#"></a></li>
@@ -69,9 +70,9 @@
 						</ul>
 					</div>
 					<div id="m_login2"  class="btn2_div">
-						<input type="text" placeholder="주문번호 입력"  alt="주문번호를 입력해주세요">
-						<input type="text" placeholder="주문 비밀번호 입력"  alt="비밀번호를 입력해주세요">
-						<button class="log_btn">주문/배송 조회</button>
+						<input type="text" placeholder="주문번호 입력"  alt="주문번호를 입력해주세요" name="sail_number">
+						<input type="password" placeholder="주문 비밀번호 입력"  alt="비밀번호를 입력해주세요" name="sail_pw">
+						<input type="button" class="log_btn" onclick="no_member()" value="주문/배송 조회">
 						<ul class="log_t_box">
 							<li>주문 시 입력한 주문비밀번호와 문자로 발송된 주문번호를 입력하시면 주문내역/배송현황을 조회할 수 있습니다.</li>
 							<li>비회원으로 구매 시 쿠폰 및 포인트적립 혜택을 받으실 수 없습니다.</li>

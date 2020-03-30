@@ -5,6 +5,7 @@
 		<title>관리자페이지</title>
   		<link rel="stylesheet" href="css/admin_header.css">
 		<link type="text/css" rel="stylesheet" href="css/login_admin.css">
+		<script type="text/javascript" src="js/login_ch.js"></script>
 	</head>
 	<body>
 		<header id="topfix">
@@ -73,14 +74,14 @@
 		    </nav>
 		</header>
 		<section>
-			<form action="admin_main.html" method="post" name="admin_login_field">
+			<form action="admin_main.html" method="post" name="admin_login">
 				<div id="login_box">
 					<div id="loginField">
-						<input type="text" placeholder="아이디를 입력하세오">
-						<input type="password" placeholder="비밀번호를 입력하세오">
-						<a href="admin_main.html"><button><span>Login</span></button></a>
+						<input type="text" placeholder="아이디를 입력하세오" name="ad_id">
+						<input type="password" placeholder="비밀번호를 입력하세오" name="ad_pw">
+						<input type="button" class="btn_ad" onclick="admin_log()" value="Login">
 						<select name="login_level" id="log_level_box">
-							<option>권한 선택[Select]</option>
+							<option value="">권한 선택[Select]</option>
 							<option value="EMPLOYE" selected="selected">직원[EMPLOYE]</option>
 							<option value="TEACHER">강사[TEACHER]</option>
 						</select>

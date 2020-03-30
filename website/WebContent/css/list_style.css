@@ -157,6 +157,7 @@ td{
 	background: #BDD61A;
 	font-weight: 700;
 	border: 1px solid #BDD61A;
+	cursor: pointer;
 }
 #pagination>div:nth-child(2){
     line-height: 40px;

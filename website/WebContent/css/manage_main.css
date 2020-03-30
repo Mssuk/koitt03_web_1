@@ -129,10 +129,6 @@ div {
 	font-weight: bold;
 }
 
-#leftArea ul>li:hover a {
-	
-}
-
 #leftArea ul>li.on {
 	height: 39px;
 	background-color: #9f9f9f;
@@ -237,9 +233,6 @@ div {
 	border-bottom: 1px solid #c9c9c9;
 }
 
-#leftArea ul>div:nth-child(4) a {
-
-}
 
 #leftArea ul>div:nth-child(5) {
 	position: absolute;

@@ -207,9 +207,11 @@ h3{
     position: relative;
     text-align: center;
     left: 200px;
+    border: 0;
 }
 #bottom>button:nth-child(2){
     background: #BDD61A;
+    border: 1px solid #BDD61A;
 }
 #bottom>button>span{
     display: block;

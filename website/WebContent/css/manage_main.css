@@ -3,8 +3,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	height: 100%;
-	font-family: "돋움", verdana;
+	/*height: 100%;*/
+	font-family: "돋움", verdana, serif;
 	font-size: 12px;
 	font-weight: normal;
 	box-sizing: border-box;

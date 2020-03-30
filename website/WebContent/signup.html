@@ -83,7 +83,7 @@
                 <span>(<span>*</span>
             항목은 필수 입력입니다.)</span></h3>
 
-            <form name="form1" method="post" action="signinfo.html">
+            <form name="form1" method="post" action="signinfo.html" onsubmit="return check()">
                 <fieldset class="boardForm01">
                     <dl>
                         <dt class="blt">
@@ -176,11 +176,11 @@
                             <label>휴대전화</label>
                         </dt>
                         <dd class="phone">
-                            <input type="text" name="mnum1" value="010">
+                            <input type="text" id="t_num1" name="mnum1" value="010" placeholder="010">
                             <span>-</span>
-                            <input type="text" name="mnum2" value="1234">
+                            <input type="text" name="t_num2" value="1234">
                             <span>-</span>
-                            <input type="text" name="mnum3" value="1234">
+                            <input type="text" name="t_num3" value="1234">
 
                         </dd>
                     </dl>
@@ -431,7 +431,7 @@
                                style="width: 120px; height: 50px; cursor: pointer">
                     </li>
                     <li>
-                        <input type="submit" value="저장" class="btnType01"   onclick="check()"
+                        <input type="submit" value="저장" class="btnType01"
                                style="border: 0; width: 120px; height: 50px; cursor: pointer">
                     </li>
                 </ul>

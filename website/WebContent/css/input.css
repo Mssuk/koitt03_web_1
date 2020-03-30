@@ -200,7 +200,7 @@ h3{
     margin-top: 50px;
 
 }
-#bottom>button{
+#bottom button{
     display: inline-block;
     width: 240px;   height: 56px;
     margin-left: 8px;
@@ -208,12 +208,28 @@ h3{
     text-align: center;
     left: 200px;
     border: 0;
+    cursor: pointer;
 }
-#bottom>button:nth-child(2){
+#bottom a button{
+    display: inline-block;
+    width: 240px;   height: 56px;
+    margin-left: 8px;
+    position: relative;
+    text-align: center;
+    left: 200px;
+    border: 0;
     background: #BDD61A;
     border: 1px solid #BDD61A;
+    cursor: pointer;
 }
-#bottom>button>span{
+
+#bottom>a>button>span{
+     display: block;
+     box-sizing: border-box;
+     text-align: center;
+     font-weight: 700;
+ }
+#bottom button span{
     display: block;
     box-sizing: border-box;
     text-align: center;

@@ -21,6 +21,13 @@ nav>h1>a{width:100px; height: 30px;display: inline-block;box-sizing: border-box;
 nav>ul:nth-child(2) {width:740px; height: 40px;margin:0 auto;position:relative; top:-9px;}
 nav>ul:nth-child(2)>li{float: left;margin-right: 40px;color:#101010;font-weight: 700; font-size:22px;line-height: 32px;}
 nav>ul:nth-child(2)>li>span{color:red; font-weight: bold;font-size:36px;position:relative;top:-18px;left:-9px;line-height:0;}
+.nav_2nd{width:740px; height: 40px; margin:0 auto; position:relative; top:-9px;}
+.nav_2nd>li{height : 40px; float: left; margin-right: 40px;color:#101010;font-weight: 700; font-size:22px;line-height: 32px; position:relative;}
+.nav_2nd>li{ color: #666;display:inline-block; }
+.nav_2nd>li:after { display:block; content: ''; border-bottom: solid 3px #ff5a2b; transform: scaleX(0);  transition: transform 250ms ease-in-out;}
+.nav_2nd>li:hover:after { transform: scaleX(1); }
+.nav_2nd>li.fromRight:after{ transform-origin:100% 50%; }
+.nav_2nd>li.fromLeft:after{  transform-origin:  0% 50%; }
 /*아이콘*/
 nav>ul:nth-child(3) {width:160px; height: 52px;float:right; margin-top:-54px;box-sizing: border-box;}
 nav>ul:nth-child(3)>li{float: left;margin-right: 20px;color:#101010;font-weight: 700; font-size:12px;}

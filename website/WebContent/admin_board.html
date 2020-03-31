@@ -14,7 +14,7 @@
 		$(document).ready(()=>{
 			$('.doors').click((e) => {
 				const numbering = $(e.target).closest('td').prev('td').text();
-				location.href = 'manage_notice_view.html?' + numbering;
+				location.href = 'admin_view.html?' + numbering;
 			});
 		});
 	</script>
@@ -24,7 +24,7 @@
 	<header id="topfix">
 	    <div id="header">
 	        <div class="logo_txt">
-	            <span>+++++</span> <a href="#">관리자 페이지</a> <span>+++++</span>
+	            <span>+++++</span> <a href="admin_main.html">관리자 페이지</a> <span>+++++</span>
 	        </div>
 	        <ul class="top_menu">
 	            <li>
@@ -74,7 +74,7 @@
 	                </a>
 	            </li>
 	            <li>
-	                <a href="#">
+	                <a href="admin_event.html">
 	                    <span class="menuIcon5">이벤트관리</span>
 	                </a>
 	            </li>
@@ -133,7 +133,6 @@
 				</div>
 			</div>
 		</div>
-<<<<<<< HEAD
 			
 <!-- 관리자 게시판 content 입니다------------------------------------------>
 
@@ -252,7 +251,7 @@
 						</table>
 						<div class="border_btn">
 							<p class="float_r">
-								<button class="btnIcon">글쓰기</button>
+								<button class="btnIcon" onclick="location.href='admin_input.html'">글쓰기</button>
 							</p>
 						</div>
 					</div>

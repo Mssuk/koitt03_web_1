@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>아이디 중복체크...</title>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/signpop.js"></script>
+
+</head>
+<body>
+<h1>아이디 중복체크</h1>
+<form action="" name="form">
+    <p>4~16자리의 영문, 숫자, 특수기호(_)만 사용하실 수 있습니다.<br>
+        첫 글자는 영문으로 입력해 주세요.</p>
+    <input type="text" name="ch_id" id="ch_id"/>
+    <input type="button" value="아이디 확인" onclick="id_check_db()"/><br/>
+    <p id="ch_text"></p>
+    <br/>
+    <input type="button" value="아이디 사용하기" onclick="join_datainput()"/>
+</form>
+</body>
+</html>

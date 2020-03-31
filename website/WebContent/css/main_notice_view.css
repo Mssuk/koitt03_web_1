@@ -1,7 +1,3 @@
-#manage_main div{
-    width: fit-content;
-}
-
 #contentArea{
     border: 1px solid orange;
     display: inline-block;
@@ -11,4 +7,5 @@
     margin-top: 27px;
     margin-right: 50px;
     padding-bottom: 80px;
+    width: fit-content !important;
 }

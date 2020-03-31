@@ -13,7 +13,7 @@
         $(document).ready(()=>{
             $('.doors').click((e) => {
                 const numbering = $(e.target).closest('td').prev('td').text();
-                location.href = 'manage_notice_view.html?' + numbering;
+                location.href = 'admin_view.html?' + numbering;
             });
         });
     </script>
@@ -23,7 +23,7 @@
 <header id="topfix">
     <div id="header">
         <div class="logo_txt">
-            <span>+++++</span> <a href="#">관리자 페이지</a> <span>+++++</span>
+            <span>+++++</span> <a href="admin_main.html">관리자 페이지</a> <span>+++++</span>
         </div>
         <ul class="top_menu">
             <li>
@@ -154,6 +154,21 @@
         <div id="wrap">
             <div>
                 <div class="cont">
+                    <table id="board_search">
+                        <tr>
+                            <td>
+                                <select id="search_cat">
+                                    <option value>선택
+                                    <option value="subject">제목
+                                    <option value="content">내용
+                                    <option value="writer">작성자
+                                </select>
+                                <input type="text" id="search_box">
+                                <button id="search_button" onclick=""></button>
+
+                            </td>
+                        </tr>
+                    </table>
                     <table class="list_table">
                         <colgroup>
                             <col width="60px;">

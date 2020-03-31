@@ -1,12 +1,18 @@
 @charset "UTF-8";
-
 * {padding: 0; margin: 0;}
+/* search */
+#board_search{ float: right; padding: 10px 0 10px 10px;}
+#search_cat{height: 27px;}
+#search_box{}
+#search_button{ background: url('../images/btn_BoardSrch.png') no-repeat; width: 30px; height:28px; margin:0; vertical-align: middle; line-height: 24px; box-shadow: none;}
+/* 게시글 */
 #wrap{width: 100%; margin: 98px 0 0 0;}
 #wrap>div:nth-child(1){width: 1250px;}
 .cont{width: 1000px;margin:0 auto;}
 .list_table{ width: 1000px; border-top: 2px solid black; box-sizing: border-box; border-collapse: collapse;}
 .list_table th{background: #f8f8f8; height: 30px; padding: 8px 0 3px 0; font-size: 13px; font-weight: bold;}
 .list_table td{border-top: 1px solid #e1e1e1; padding: 8px 0; text-align: center;}
+.list_table td:nth-child(2){text-align: left;}
 .list_table thead{border-bottom: none;}
 .list_table tbody tr:last-child{border-bottom: 2px solid black;}
 /*추가한 부분입니다*/

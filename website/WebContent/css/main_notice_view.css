@@ -1,0 +1,11 @@
+#contentArea{
+    border: 1px solid orange;
+    display: inline-block;
+    overflow: hidden;
+    min-height: 800px;
+    margin-left: 250px;
+    margin-top: 27px;
+    margin-right: 50px;
+    padding-bottom: 80px;
+    width: fit-content !important;
+}

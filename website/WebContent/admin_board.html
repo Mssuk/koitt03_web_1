@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="css/admin_board.css">
 	<link rel="stylesheet" href="css/admin_header.css">
 	<link rel="stylesheet" href="css/main_notice.css">
+	<script src="js/jquery-1.12.3.js"></script>
+	<script>
+		$(document).ready(()=>{
+			$('.doors').click((e) => {
+				const numbering = $(e.target).closest('td').prev('td').text();
+				location.href = 'manage_notice_view.html?' + numbering;
+			});
+		});
+	</script>
 </head>
 <body>
 	<!-- 관리자 헤더 입니다------------------------------------------------------------------------>
@@ -124,7 +133,7 @@
 				</div>
 			</div>
 		</div>
-			
+
 <!-- 관리자 게시판 입니다------------------------------------------------------------------------>
 		<div id="contentArea">
 		    <div class="sub_title_bar">
@@ -164,18 +173,60 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>1</td>
-									<td><a href="#">공지사항</a></td>
+									<td>8</td>
+									<td><a href="#" class="doors">사이트 약관 소개</a></td>
 									<td>2019-09-12</td>
 									<td>관리자</td>
-									<td class="view_count"></td>
+									<td class="view_count">155</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td><a href="#" class="doors">1:2 영어 수업 같이 하실 파트너분 찾습니다.</a></td>
+									<td>2019-04-15</td>
+									<td>관리자</td>
+									<td class="view_count">166</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td><a href="#" class="doors">카드 무이자 할부 중단 안내 (3월1일부터)</a></td>
+									<td>2019-04-15</td>
+									<td>관리자</td>
+									<td class="view_count">166</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td><a href="#" class="doors">연휴 휴강/휴무 안내</a></td>
+									<td>2019-04-15</td>
+									<td>관리자</td>
+									<td class="view_count">166</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td><a href="#" class="doors">4월 수강료 50%할인권, 스타벅스 기프티콘 2장 100% 증정</a></td>
+									<td>2019-04-15</td>
+									<td>관리자</td>
+									<td class="view_count">166</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td><a href="#" class="doors">추천인 입력시 포인트 적릭해드립니다.</a></td>
+									<td>2019-04-15</td>
+									<td>관리자</td>
+									<td class="view_count">166</td>
 								</tr>
 								<tr>
 									<td>2</td>
-									<td><a href="manage_notice_view.html">사이트 약관 소개</a></td>
+									<td><a href="#" class="doors">3.1절 휴무 관련 안내입니다.</a></td>
 									<td>2019-04-15</td>
 									<td>관리자</td>
-									<td class="view_count"></td>
+									<td class="view_count">166</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td><a href="#" class="doors">사이트 오픈 이벤트 실시!</a></td>
+									<td>2019-03-29</td>
+									<td>관리자</td>
+									<td class="view_count">166</td>
 								</tr>
 
 

@@ -7,7 +7,20 @@
     <script type="text/javascript" src="js/signup.js"></script>
     <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="js/common.js" defer="defer"></script>
-</head>
+    <script>
+
+        const idPopup = () => {
+            window.open(
+                'signpop.html',
+                'id_check',
+                `width=600px,
+                height=600px,
+                resizable=no,
+                scrollbars=no`
+            )
+        }
+    </script>
+<head>
 <body>
 <header>
 			<div id="nav_up">
@@ -98,8 +111,8 @@
                             <label for="id">아이디</label>
                         </dt>
                         <dd class="idCheck">
-                            <input type="text" id="id" name="userid">
-                            <input type="button" value="중복확인" class="btn_member">
+                            <input type="text" id="id" name="userid" readonly>
+                            <input type="button" value="중복확인" class="btn_member" onclick="idPopup()">
                             <ul class="cmt">
                                 <li>4~16자리의 영문, 숫자, 특수기호(_)만 사용하실 수 있습니다.</li>
                                 <li>첫 글자는 영문으로 입력해 주세요.</li>

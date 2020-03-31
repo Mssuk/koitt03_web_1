@@ -1,0 +1,56 @@
+#contentArea {
+    /*border: 1px solid orange;*/
+    display: inline-block;
+    overflow: hidden;
+    min-height: 800px;
+    margin-left: 250px;
+    margin-top: 32px;
+    margin-right: 50px;
+    padding-bottom: 80px;
+    width: fit-content !important;
+}
+
+.sub_title_bar {
+    min-width: 1250px;
+
+}
+
+.ptit {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 33px;
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+.ptit li {
+    width: 100%;
+    line-height: 25px;
+    height: 25px;
+    float: left;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "돋움", verdana, serif !important;
+}
+
+.float_r {
+    float: right;
+}
+
+.ptit li .listed {
+    background: #7b7b7b url('../images/notice_header/lmsmanual_01.png') 3px no-repeat;
+    line-height: 20px;
+    height: 22px;
+    width: 22px;
+    border: 1px #4b4b4b solid;
+    margin-left: 2px;
+}
+
+.ptit li .favorite {
+    background: #7b7b7b url('../images/notice_header/tit_favorite.png') 3px no-repeat;
+    line-height: 20px;
+    height: 22px;
+    width: 22px;
+    border: 1px #4b4b4b solid;
+    margin-left: 2px;
+}

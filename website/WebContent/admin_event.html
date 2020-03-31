@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <title>게시판 관리</title>
     <link type="text/css" rel="stylesheet" href="css/manage_main.css">
+    <link rel="stylesheet" href="css/admin_main.css">
+    <link rel="stylesheet" href="css/admin_board.css">
     <link rel="stylesheet" href="css/admin_header.css">
     <link rel="stylesheet" href="css/main_notice.css">
-    <title>관리페이지</title>
     <script src="js/jquery-1.12.3.js"></script>
-    <script src="js/board_context.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $('.doors').click((e) => {
+                const numbering = $(e.target).closest('td').prev('td').text();
+                location.href = 'manage_notice_view.html?' + numbering;
+            });
+        });
+    </script>
 </head>
 <body>
 <!-- 관리자 헤더 입니다------------------------------------------------------------------------>
 <header id="topfix">
     <div id="header">
-        <div class="logo_txt" style="margin: 12px 0 0 16px">
+        <div class="logo_txt">
             <span>+++++</span> <a href="#">관리자 페이지</a> <span>+++++</span>
         </div>
         <ul class="top_menu">
@@ -22,12 +31,12 @@
                     <tbody>
                     <tr>
                         <td>
-                            <span class="float_right">
-                                <a href="#">
-                                    <img alt="자물쇠" src="images/admin_main/logout.png">
-                                </a>
-                                    <span class="float_right">관리자모드</span>
-                            </span>
+	                            <span class="float_right">
+	                                    <a href="#">
+	                                        <img alt="자물쇠" src="images/admin_main/logout.png">
+	                                    </a>
+	                                        <span class="float_right">관리자모드</span>
+	                            </span>
                         </td>
                     </tr>
                     </tbody>
@@ -64,7 +73,7 @@
                 </a>
             </li>
             <li>
-                <a href="admin_event.html">
+                <a href="#">
                     <span class="menuIcon5">이벤트관리</span>
                 </a>
             </li>
@@ -77,7 +86,6 @@
     </nav>
 </header>
 <!-- 여기까지 관리자 헤더 입니다------------------------------------------------------------------------>
-
 <div id="wrap">
     <div id="manage_main">
         <div>
@@ -123,67 +131,120 @@
             </div>
             <!--------- 좌측메뉴 ---------->
         </div>
-        <div id="contentArea">
-            <div class="sub_title_bar">
-                <ul class="ptit">
-                    <li>
-                        공지사항
-                        <div class="float_r">
-                            <a href="#"><p class="listed"></p></a>
-                        </div>
-                        <div class="float_r">
-                            <a href="#"><p class="favorite"></p></a>
-                        </div>
-                        <div></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="sub_content_area">
-                <div id="notice_content">
-                    <table class="table_content">
+    </div>
+</div>
+
+<!-- 관리자 게시판 입니다------------------------------------------------------------------------>
+<div id="contentArea">
+    <div class="sub_title_bar">
+        <ul class="ptit">
+            <li>
+                이벤트
+                <div class="float_r">
+                    <a href="#"><p class="listed"></p></a>
+                </div>
+                <div class="float_r">
+                    <a href="#"><p class="favorite"></p></a>
+                </div>
+                <div></div>
+            </li>
+        </ul>
+    </div>
+    <div class="sub_content_area">
+        <div id="wrap">
+            <div>
+                <div class="cont">
+                    <table class="list_table">
                         <colgroup>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
+                            <col width="60px;">
+                            <col width>
+                            <col width="80px;">
+                            <col width="80px;">
+                            <col width="50px;">
                         </colgroup>
                         <thead>
                         <tr>
-                            <th><img src="images/notice_header/t_icon.png" class="dotted">작성자</th>
-                            <td id="writeID">관리자</td>
-                            <th><img src="images/notice_header/t_icon.png" class="dotted">작성일</th>
-                            <td id="writeDate">2019-04-15 14:03:33</td>
+                            <th>No.</th>
+                            <th>제목</th>
+                            <th>날짜</th>
+                            <th>작성자</th>
+                            <th>조회수</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <th><img src="images/notice_header/t_icon.png" class="dotted">제목</th>
-                            <td colspan="3" id="writeSubject"></td>
+                            <td>8</td>
+                            <td><a href="#" class="doors">EVENT 8</a></td>
+                            <td>2019-09-12</td>
+                            <td>관리자</td>
+                            <td class="view_count">155</td>
                         </tr>
                         <tr>
-<!--                            실제 글 내용-->
-                            <td colspan="4" id="writeContext">
-                            <div style="font-size: 12px; min-height: 50px">
-
-                            </div>
-                            </td>
+                            <td>7</td>
+                            <td><a href="#" class="doors">EVENT 7</a></td>
+                            <td>2019-04-15</td>
+                            <td>관리자</td>
+                            <td class="view_count">166</td>
                         </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a href="#" class="doors">EVENT 6</a></td>
+                            <td>2019-04-15</td>
+                            <td>관리자</td>
+                            <td class="view_count">166</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a href="#" class="doors">EVENT 5</a></td>
+                            <td>2019-04-15</td>
+                            <td>관리자</td>
+                            <td class="view_count">166</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a href="#" class="doors">EVENT 4</a></td>
+                            <td>2019-04-15</td>
+                            <td>관리자</td>
+                            <td class="view_count">166</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="#" class="doors">EVENT 3</a></td>
+                            <td>2019-04-15</td>
+                            <td>관리자</td>
+                            <td class="view_count">166</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="#" class="doors">EVENT 2</a></td>
+                            <td>2019-04-15</td>
+                            <td>관리자</td>
+                            <td class="view_count">166</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#" class="doors">EVENT 1</a></td>
+                            <td>2019-03-29</td>
+                            <td>관리자</td>
+                            <td class="view_count">166</td>
+                        </tr>
+
+
                         </tbody>
                     </table>
                     <div class="border_btn">
                         <p class="float_r">
-                            <button class="btnIcon">수정</button>
-                            <button class="btnIcon">삭제</button>
-                            <button class="btnIcon" onclick="location.href='admin_board.html'">리스트</button>
+                            <button class="btnIcon" onclick="location.href='admin_input.html'">글쓰기</button>
                         </p>
                     </div>
                 </div>
-    <article id="foot">
-        <p>© COOKIT ALL RIGHTS RESERVED</p>
-    </article>
             </div>
         </div>
     </div>
+    <!-- 여기까지 관리자 게시판 입니다------------------------------------------------------------------------>
+    <article id="foot">
+        <p>© COOKIT ALL RIGHTS RESERVED</p>
+    </article>
 </div>
 </body>
 </html>

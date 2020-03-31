@@ -1,55 +1,18 @@
 @charset "UTF-8";
 
-* {
-	margin: 0;
-	padding: 0;
-	/*height: 100%;*/
-	font-family: "돋움", verdana, serif;
-	font-size: 12px;
-	font-weight: normal;
-	box-sizing: border-box;
-	line-height: 23px;
-}
+* {	margin: 0; padding: 0; font-family: "돋움", verdana, serif; font-size: 12px;	font-weight: normal; box-sizing: border-box; line-height: 23px;}
 
-div {
-	margin: 0px;
-	padding: 0px;
-	color: #666;
-	line-height: 160%;
-}
+div {margin: 0px;padding: 0px;color: #666;line-height: 160%;}
+h2{align: center;}
+ul, li {list-style: none; margin: 0px; padding: 0px; overflow: hidden; }
+li {display: list-item;	text-align: -webkit-match-parent;}
+img {border: none; vertical-align: middle; display: inline-block;}
 
-ul, li {
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
-	overflow: hidden;
-}
+a {color: #666; text-decoration: none; font-size: 12px;}
+a:link, a:visited, a:hover, a:active {color: #666; text-decoration: none;}
+a:focus {color: #e74c3c;}
 
-li {
-	display: list-item;
-	text-align: -webkit-match-parent;
-}
-
-a:link, a:visited, a:hover, a:active {
-	color: #666;
-	text-decoration: none;
-}
-
-a {
-	color: #666;
-	text-decoration: none;
-	font-size: 12px;
-}
-
-a:focus {
-	color: #e74c3c;
-}
-
-img {
-	border: none;
-	vertical-align: middle;
-	display: inline-block;
-}
+#left_nav{width:200px; margin:98px 0 0 0; position: absolute; float: left;}
 
 #wrap {
 	width: 100%;
@@ -64,11 +27,6 @@ img {
 	min-height: 100%;
 }
 
-div {
-	color: #666;
-	line-height: 160%;
-}
-
 #manage_main>div {
 	position: absolute;
 	width: 230px;
@@ -77,8 +35,10 @@ div {
 
 /*좌측메뉴*/
 #leftArea {
+	position: relative;
 	height: 323px;
 	float: left;
+/* 	padding: 98px 0 0 0; */
 }
 
 #leftArea>div {

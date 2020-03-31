@@ -126,30 +126,47 @@ ul, li {
 .gnb_navi > li a span.menuIcon0 {
     background-position: 0 -1px;
 }
+.gnb_navi > li a span.menuIcon0:hover {
+    background-position: -140px -1px;
+}
 
 .gnb_navi > li a span.menuIcon1 {
     background-position: 0 -18px;
+}
+.gnb_navi > li a span.menuIcon1:hover {
+    background-position: -140px -18px;
 }
 
 .gnb_navi > li a span.menuIcon2 {
     background-position: 0 -34px;
 }
-
+.gnb_navi > li a span.menuIcon2:hover{
+    background-position: -140px -34px;
+}
 .gnb_navi > li a span.menuIcon3 {
     background-position: 0 -51px;
 }
 
+.gnb_navi > li a span.menuIcon3:hover {
+    background-position: -180px -51px;
+}
 .gnb_navi > li a span.menuIcon4 {
     background-position: 0 -68px;
 }
-
+.gnb_navi > li a span.menuIcon4:hover {
+    background-position: -140px -68px;
+}
 .gnb_navi > li a span.menuIcon5 {
     background-position: 0 -85px;
 }
-
+.gnb_navi > li a span.menuIcon5:hover {
+    background-position: -140px -85px;
+}
 .gnb_navi > li a span.menuIcon6 {
     background-position: 0 -102px;
 }
-
+.gnb_navi > li a span.menuIcon6:hover {
+    background-position: -140px -102px;
+}
 
 

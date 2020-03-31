@@ -1,0 +1,90 @@
+@charset "UTF-8";
+#manage_main{
+	height: 1000px;
+}
+button{
+	border: none;
+	background: none;
+}
+.sub_content_area>form>table{
+	width:1000px;
+	height: 725px;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+.sub_content_area>form>table>thead {
+	border-top:2px solid #5b5b5b; 
+}
+
+.sub_content_area>form>table>thead>tr:nth-child(3)>td>input{
+	width:850px;
+}
+
+.sub_content_area>form>table>tfoot {
+	border-bottom:2px solid #5b5b5b; 
+}
+.sub_content_area>form>table th{
+	background: #ebebeb;
+    border-bottom: 1px #c9c9c9 solid;
+    padding: 8px 0 8px 8px;
+    font-size: 13px;
+    text-align: left;
+    color:#666666;    
+    font-weight: bold;
+}
+.sub_content_area>form>table th img{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.sub_content_area>form>table td{
+    border-bottom: 1px #c9c9c9 solid;
+    padding: 8px 0 8px 8px;
+    font-size: 13px;
+    text-align: left;
+}
+
+
+/*tbody존*/
+.sub_content_area>form>table>tbody>tr>td>textarea{
+	width:990px;
+	height: 500px;
+}
+
+
+/*수정 목록 버튼존*/
+.sub_content_area>form>div.btn_area{
+	width:1000px;
+	margin:10px auto;
+	height: 50px; 
+	text-align: right;
+}
+.sub_content_area>form>div.btn_area>input{
+	border:none;
+	color:white;
+    background-color: #7e7e7e;
+    width: 54px;
+    height: 25px;
+    line-height: 25px;
+}
+
+
+.sub_content_area>form>table>tfoot>tr>th .file_ico{
+	margin-left: 5px;
+}
+.sub_content_area>form>table>tfoot>tr:nth-child(1)>td>input {
+    border: 1px solid #ccc;
+	width:851px;
+}
+.sub_content_area>form>table>tfoot>tr:nth-child(2)>td>div.auto_no_box{
+	width:730px;
+	float: right;
+	text-align: left;
+}
+#foot{
+	clear: both;
+}

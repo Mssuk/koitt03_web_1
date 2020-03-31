@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link type="text/css" rel="stylesheet" href="css/manage_main.css">
+	<link type="text/css" rel="stylesheet" href="css/manage_main.css">
+	<link rel="stylesheet" href="css/admin_main.css">
 	<link rel="stylesheet" href="css/admin_header.css">
+	<link rel="stylesheet" href="css/main_notice.css">
+	<link rel="stylesheet" href="css/admin_input.css">
 <title>관리페이지</title>
 </head>
 <body>
@@ -36,7 +39,7 @@
 		<ul class="gnb_navi">
 			<p>&nbsp;</p>
 			<li>
-				<a href="#">
+				<a href="admin_board.html">
 					<span class="menuIcon0">공지사항</span>
 				</a>
 			</li>
@@ -91,7 +94,7 @@
 							</li>
 							<div class="submenu" id="LeftMenuID1">
 								<li class="on"><a href="#"><img src="images/manage/icon_title_left.png">&nbsp;회원정보</a></li>
-								<li><a href="#"><img src="images/manage/icon_title_left.png">&nbsp;관리자 공지사항</a></li>
+								<li><a href="admin_board.html"><img src="images/manage/icon_title_left.png">&nbsp;관리자 공지사항</a></li>
 								<li><a href="#"><img src="images/manage/icon_title_left.png">&nbsp;쪽지함</a></li>
 							</div>
 							<li>
@@ -120,46 +123,75 @@
 				</div>
 				<!--------- 좌측메뉴 ---------->
 			</div>
-			<div>
-			<div class="sub_title_bar">
-				<p>공지사항</p>
-			</div>
-			<div class="sub_content_area">
-				<form action="admin_list.html" method="post" name="input_form_ad">
+			<div id="contentArea">
+			    <div class="sub_title_bar">
+			        <ul class="ptit">
+			            <li>
+			         		 공지사항
+			                <div class="float_r">
+			                    <a><p class="listed"></p></a>
+			                </div>
+			                <div class="float_r">
+			                    <a><p class="favorite"></p></a>
+			                </div>
+			                <div></div>
+			            </li>
+			        </ul>
+			    </div>
+   				<div class="sub_content_area">
+				<form action="manage_notice_view.html" method="post" name="input_form_ad">
 					<table>
+						<colgroup>
+						<col width="130px">
+						<col width="870px">
+						</colgroup>
 						<!-- 유형~제목 -->
+						<thead>
 						<tr>
-							<th><img src="images/admin_input/t_con.png" alt="" class="th_con">유형</th>
+							<th><img src="images/admin_input/t_icon.png" alt="" class="th_con">유형</th>
 							<td><select name="ad_level"><option value="basic">일반글 작성</option><option value="notice">공지글 작성</option></select></td>
 						</tr>
 						<tr>
-							<th><img src="images/admin_input/t_con.png" alt="" class="th_con">작성자</th>
+							<th><img src="images/admin_input/t_icon.png" alt="" class="th_con">작성자</th>
 							<td>관리자</td>
 						</tr>
 						<tr>
-							<th><img src="images/admin_input/t_con.png" alt="" class="th_con">제목</th>
+							<th><img src="images/admin_input/t_icon.png" alt="" class="th_con">제목</th>
 							<td><input type="text" name="adi_title"></td>
 						</tr>
-					</table>
-					<textarea rows="10" cols=""></textarea>
-					<div>
-					</div>
+						</thead>
+						<tbody>
+						<!-- textarea존 -->
+							<tr>
+								<td colspan="2">
+								<textarea rows="10" cols="100" name="index"></textarea>
+								</td>
+							</tr>
+						</tbody>
 						<!-- 첨부파일~자동등록방지 -->
-					<table>	
+						<tfoot>
 						<tr>
-							<th><img src="images/admin_input/t_con.png" alt="" class="th_con"></th>
-							<td></td>
+							<th><img src="images/admin_input/t_icon.png" alt="" class="th_con">첨부파일<span><img src="images/admin_input/icon_help.png" alt="이미지 혹은 문서파일만 첨부가능" class="file_ico"></span></th>
+							<td><input type="file" name="file"></td>
 						</tr>
 						<tr>
-							<th><img src="images/admin_input/t_con.png" alt="" class="th_con"></th>
-							<td></td>
+							<th><img src="images/admin_input/t_icon.png" alt="" class="th_con">자동등록<br>&nbsp;&nbsp;방지코드</th>
+							<td><img src="images/admin_input/3j8yws.jpg" alt="자동입력방지문자"><div class="auto_no_box"><input type="text" name="auto_dis"><br><p>*좌측의 코드를 입력해주세요</p></div></td>
 						</tr>
+						</tfoot>
 					</table>
+					<div class="btn_area">
+						<input type="button" value="작성" onclick="location.href='manage_notice_view.html'">
+						<input type="button" value="리스트" onclick="location.href='admin_board.html'">
+					</div>
 				</form>
+				
 			</div>
 			</div>
 		</div>
-
+		<article id="foot">
+	       <p>© COOKIT ALL RIGHTS RESERVED</p>
+	    </article>
 	</div>
 </body>
 </html>

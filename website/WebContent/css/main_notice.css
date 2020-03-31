@@ -44,6 +44,12 @@
     border: 1px #4b4b4b solid;
     margin-left: 2px;
 }
+/*리스트 아이콘 배경 추가*/
+.ptit li .listed:hover {
+    background: url("../images/listed_on.png") 3px no-repeat;
+    background-color: #7b7b7b;
+
+}
 
 .ptit li .favorite {
     background: #7b7b7b url('../images/notice_header/tit_favorite.png') 3px no-repeat;
@@ -53,7 +59,12 @@
     border: 1px #4b4b4b solid;
     margin-left: 2px;
 }
+/*선호 아이콘 배경 추가*/
+.ptit li .favorite:hover {
+    background:url("../images/tit_favorite_on.png") 3px no-repeat;
+    background-color: #7b7b7b;
 
+}
 .sub_content_area{
     /*margin-bottom: 100px;*/
     height: fit-content;
@@ -116,4 +127,8 @@
     padding: 0 15px 0 15px;
     color: #fff;
     font-weight: bold;
+}
+/*아이콘 배경색 추가*/
+.btnIcon:hover{
+    background-color: #ed5f00;
 }

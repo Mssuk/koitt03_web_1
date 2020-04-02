@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+#detail_box{
+	padding:70px 0 140px 0;
+	letter-spacing: -1px;
+}
+#de_food_top{
+	width:1180px;
+	height: 800px;
+	margin:0 auto;
+	overflow: hidden;
+	margin-bottom: 150px;
+}
+#de_food_top>div#food_main{
+	float:left;
+	width:600px;
+	height: 730px;
+	overflow: hidden;
+}
+#de_food_top>div#food_main img{
+	width:100%;
+}
+#de_food_top>div#food_main>ul{
+	float:left;
+	width:600px; height: 90px;
+	padding: 0 50px;
+	margin:30px 0; 
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#de_food_top>div#food_main>ul>li{
+	float: left;
+	margin-right: 5px;
+	width:90px;
+	height: 90px;
+}
+
+#de_food_top>div#food_main>div{
+	position: absolute;
+	width:600px;
+	height: 35px;
+	top:850px;
+	box-sizing: border-box;
+	padding: 0 5px;
+}
+
+#de_food_top>div#food_main>div>button{
+	width:32px;
+	height:32px;
+	background: url("../images/ico_set.png") no-repeat;
+	background-position:-674px 0;
+    background-size: 800px 800px; 
+    border: none;
+}
+#de_food_top>div#food_main>div>button:nth-child(2){
+	background-position:-706px 0;	
+	float: right;
+}
+#de_food_top>div#food_main_sub {
+	clear:both;	
+	width:600px;
+	margin-top: 120px;
+	height: 50px;
+}
+
+/*리뷰별*/
+#de_food_top>div#food_main_sub>div{
+	padding-top: 20px;
+}
+#de_food_top>div#food_main_sub>div>a>span{
+	display: inline-block;
+	color: #101010;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 5px;
+}
+
+#de_food_top>div#food_main_sub>div>a>span.star{
+	width:87px;
+	height: 16px;
+    background: url("../images/ev_ico_set.png") no-repeat -374px 0;
+    background-size: 800px 800px;
+    margin-left: 50px;
+    
+}
+#de_food_top>div#food_main_sub>div>a>span.txt::before{
+	content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    margin-top: 5px;
+    background-color: #e0e0e0;
+    margin-left: -10px;
+}
+#de_food_top>div#food_main_sub>div>a>span.num{
+    padding-left: 6px;
+    color: #101010;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+#de_food_top>div#food_main_sub>div>span{
+	margin-left: 15px;
+    color: #606060;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+#de_food_top>div#food_main_sub>div>span::before{
+	content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../images/ev_ico_set.png") no-repeat;
+    background-position: -416px -80px;
+    background-size: 800px 800px;
+    margin-bottom: -12px;
+    }
+
+#de_food_top>div#food_main_sub>div>span:last-child::before{
+background-position: -454px -80px;
+}
+
+#de_food_top>div#food_main_sub>div>span:nth-child(2){
+	margin-left: 25px;
+}
+
+/*오른쪽 가격박스*/
+#de_food_top>div#food_top_info_box{
+	width:500px;
+	height:776px;
+	float: right;
+	margin-top:-770px;
+}
+
+#de_food_top>div#food_top_info_box>h2{
+	display: block;
+    color: #101010;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    word-break: break-all;
+}
+#de_food_top>div#food_top_info_box>p
+{
+    color: #101010;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 400;}
+    
+#de_food_top>div#food_top_info_box>span{
+    display: inline-block;
+    color: #101010;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    padding:0 10px;
+    margin-top: 15px;
+    letter-spacing: -1px;
+    }
+#de_food_top>div#food_top_info_box>span:nth-of-type(1){
+	padding-left:0;
+}    
+    
+#de_food_top>div#food_top_info_box>span:nth-last-of-type(2){
+	padding-right:30px;
+}
+/*가격테이블*/
+#de_food_top>div#food_top_info_box>table{
+	width:500px;
+	height: 200px;
+	border-collapse: collapse;	
+	margin-top: 10px;
+	border-bottom: 2px solid #101010;
+	
+}
+#de_food_top>div#food_top_info_box>table tr{
+	width:500px;
+	border-top: 1px solid #e0e0e0;
+}
+#de_food_top>div#food_top_info_box>table tr td{
+	color: #606060;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+}
+#de_food_top>div#food_top_info_box>table tr:nth-child(1) td:nth-child(1){
+	font-size: 15px;
+}
+#de_food_top>div#food_top_info_box>table tr td:nth-child(2){
+	color: #101010;
+}
+#de_food_top>div#food_top_info_box>table tr:nth-child(1) td{
+	font-size: 26px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #101010;
+}
+#de_food_top>div#food_top_info_box>table tr:nth-child(3){
+	height:40px;
+}
+#de_food_top>div#food_top_info_box>table tr:nth-child(3) td{
+	padding-top: 10px;
+}
+
+#de_food_top>div#food_top_info_box>table tr:last-child{
+	border-top:none;
+	height:50px;
+}
+#de_food_top>div#food_top_info_box>table tr:last-child td{
+	padding-bottom: 20px;
+}
+#de_food_top>div#food_top_info_box>table tr:last-child td span{
+	margin-left: 10px;
+	color:#606060;
+	font-size: 12px;
+}
+/*장바구니폼*/
+#de_food_top>div#food_top_info_box>form{
+	width:500px;
+}
+#de_food_top>div#food_top_info_box>form>input.radio{
+	opacity: 0;
+	position: absolute;
+}
+#de_food_top>div#food_top_info_box>form>label{
+	margin-left:-13px;
+	font-size: 17px;
+	height: 20px;
+    margin-right: 36px;
+}
+
+#de_food_top>div#food_top_info_box>form>label::before{
+	content: '';
+    display: inline-block;
+    width: 25px;
+    height: 26px;
+    margin: 14px 6px -7px 14px;
+    background: url("../images/ico_set.png") no-repeat;
+    background-position: -164px -40px;
+    background-size: 800px 800px;
+}
+#de_food_top>div#food_top_info_box>form>span{
+	font-size: 13px;    
+	line-height: 24px;
+    font-weight: 400;
+    margin-left: 83px;
+}
+#de_food_top>div#food_top_info_box>form>span::after{
+	margin-top: 18px;
+}
+
+
+#de_food_top>div#food_top_info_box>form>select.order_dsel{
+	width:500px;
+	height: 48px;
+	margin: 14px 0 20px;
+}
+#de_food_top>div#food_top_info_box>form>p{
+    color: #101010;
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom:40px; 
+    width:500px;
+    height: 48px;
+    box-sizing: border-box;
+}
+#de_food_top>div#food_top_info_box>form>p>span{
+	color: #EE0700;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+    text-align: right;
+    float: right;
+}
+
+#de_food_top>div#food_top_info_box>form>button.f_basket_heart{
+	width:64px;
+	height: 64px;
+	float: left;
+    background: none;
+    border: 1px solid #b0b0b0;
+}
+#de_food_top>div#food_top_info_box>form>button.f_basket_heart>span{
+	display:inline-block;
+	width: 24px;
+    height: 24px;
+    background: url("../images/ev_ico_set.png") no-repeat -260px 0;
+    background-size: 800px 800px;
+    
+}
+#de_food_top>div#food_top_info_box>form>input.submit_btn{
+	display:inline-block;
+	width:426px;
+	height: 64px;
+	float: left;
+    margin-left: 10px;
+    color: #101010;
+    background-color: #BDD61A;
+    border: none;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+}
+
+.under{
+    margin-left: 50px;
+    text-decoration: underline;
+}
+.under::before{
+	content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/ev_ico_set.png") no-repeat 0 0;
+    background-size: 800px 800px;
+    margin-left: -20px;}
+
+.lime{
+	color:#008A00;
+}
+
+.qt::after{
+    content: '';
+    position: absolute;
+	width: 20px;
+    height: 20px;
+    background: url("../images/ico_set.png") no-repeat -330px -74px;
+    background-size: 800px 800px;
+    margin-top: 1px;
+    margin-left: 3px;
+}
+.fire_m::after{ 
+	content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/ev_ico_set.png") no-repeat -84px 0;
+    background-size: 800px 800px;
+}
+.pro_info::before{
+	content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    margin-top: 5px;
+    background-color: #e0e0e0;
+    margin-left: -10px;
+}
+
+
+/*하단 상세페이지 */
+#detail_view_menu{
+	width:1180px;
+	margin:0 auto;
+}
+#detail_view_menu>div#detail_nav{
+	width:1180px;
+	height: 150px;
+}
+#detail_view_menu>div#detail_nav>ul:nth-child(1){
+	width:100%;
+	height: 64px;
+	text-align: center;
+}
+#detail_view_menu>div#detail_nav>ul:nth-child(1)>li{
+	float: left;
+	width:195px; height: 64px;
+	display: inline-block;
+	
+}

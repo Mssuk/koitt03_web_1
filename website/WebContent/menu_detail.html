@@ -109,8 +109,7 @@
 						
 				</div>
 			</article>
-				
-			<article id="detail_view_menu">
+			<article id="detail_view_nav_box">	
 				<div id="detail_nav">
 					<ul>
 						<li><a href="#tap_menu1">상세설명</a></li>
@@ -119,26 +118,28 @@
 						<li><a href="#tap_menu4">배송/반품/문의</a></li>
 					</ul>				
 				</div>
+			</article>	
+			<article id="detail_view_menu">
 				<div id="detail_wrap">
 					<div class="tap_menu" id="tap_menu1">
 						<img src="images/detail_view/copyright_top.gif">
 						<div class="detail_view_box01">
-						<p>주문정보안내</p>
-						<span>오전 7시 이전에 구매하시면 다음날 새벽에 받아보실 수 있습니다.</span>
-						<ul>
-							<li>
-							<i class="d_ico dico01"></i>
-							<span>오전 7시 이전<br>주문/결제 완료</span>
-							</li>
-							<li>
-							<i class="d_ico dico02"></i>
-							<span>재료<br>준비/발송</span>
-							</li>
-							<li>
-							<i class="d_ico dico03"></i>
-							<span>다음날<br>새벽수령</span>
-							</li>
-						</ul>
+							<p>주문정보안내</p>
+							<span>오전 7시 이전에 구매하시면 다음날 새벽에 받아보실 수 있습니다.</span>
+							<ul>
+								<li>
+								<i class="d_ico dico01"></i>
+								<span>오전 7시 이전<br>주문/결제 완료</span>
+								</li>
+								<li>
+								<i class="d_ico dico02"></i>
+								<span>재료<br>준비/발송</span>
+								</li>
+								<li>
+								<i class="d_ico dico03"></i>
+								<span>다음날<br>새벽수령</span>
+								</li>
+							</ul>
 						</div>
 						<div class="detail_view_box02">
 							<img src="images/detail_view/0065_pc_detail_01.jpg">
@@ -149,8 +150,8 @@
 							
 							<img src="images/detail_view/pc_detail_02.gif">
 							<div class="de_wrap">
-								<span class="tit">황태콩나물해장국</span>
-								<p class="text">구수하고 시원한 국물 맛이 일품인 황태콩나물해장국이에요. 해장으로 안성맞춤이지만, 자극적이지 않아 온 가족이 함께 먹는 식사로도 손색 없는 메뉴랍니다. 따끈한 황태콩나물해장국에 밥 한 공기면 속이 스르륵 풀리실 거예요.</p>
+								<span class="tit">담백한 특제 소스에 시원한 맛을 내주는 콩나물, 구수한 맛을 내주는 황태를 듬뿍!</span>
+								<p class="text">담백한 특제 소스에 시원한 맛을 내주는 콩나물, 구수한 맛을 내주는 황태를 듬뿍 넣어 구수하고 시원한 국물 맛을 최대한 살렸어요. 거기에 각종 채소의 신선함과 계란의 든든함까지 더했답니다. 쿡킷이 다 준비해서 보내드리니 딱 15분만 투자해서 전문점에서 먹는 맛과 비주얼의 황태콩나물해장국을 줄겨보세요!</p>
 							</div>
 							<img src="images/detail_view/0065_pc_detail_02.jpg">
 							<img src="images/detail_view/0065_pc_detail_03.jpg">
@@ -192,8 +193,8 @@
 								<p>이렇게 요리하세요!<span>15분</span></p>
 							</div>
 							<div class="video_wrap">
-								<video loop title="보글보글 해물찜" muted>
-	                               <source src="images/detail_view/20200316101610598.mp4" type="video/mp4">
+								<video loop title="보글보글 해물찜" muted width="780px" height="330px" >
+	                               <source src="images/detail_view/20200316101610598.mp4" type="video/mp4" >
 	                            </video>
 	                            <div class="video_btn_wrap">
 	                               <img src="images/detail_view/20200316101615966.jpg" alt="">
@@ -382,7 +383,8 @@
 					</div>
 					<div class="tap_menu" id="tap_menu4">
 					</div>
-				<aside>
+				</div>
+				<div id="side_bar">
 					<form>
 					<div>
 						<input type="radio" name="s_basket" id="s_basket"><label for="s_basket">장바구니</label>
@@ -391,7 +393,7 @@
 					<div>
 						<span>주문마감시간 오전 7시</span>
 						<select name="order_date">
-							<option value="" selected="selected">배송받을 날짜를 선택하세요</option>
+							<option value="" selected="selected" disabled="disabled" hidden="hidden">배송받을 날짜를 선택하세요</option>
 							<option value="today">04월 02일 (목)</option>
 							<option value="today_p1">04월 03일 (금)</option>
 							<option value="today_p2">04월 04일 (토)</option>
@@ -410,13 +412,13 @@
 						</div>
 					</div>
 					</form>
-				</aside>
 				</div>
 			</article>
 			
 			
 			
 			</div>
+			<div class="clear"></div>
 			<!-- 상품상세 끝 -->
 		</section>
 		<footer>

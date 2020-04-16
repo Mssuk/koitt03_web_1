@@ -1,3 +1,5 @@
+<%@ page import="java.sql.*" %>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -6,6 +8,61 @@
     <link rel="stylesheet" href="css/admin_main.css">
 </head>
 <body>
+<%
+    String authUser = (String) session.getAttribute("authUser");
+    if (authUser == null) {
+        String str;
+        str = "<script type=\"text/javascript\">\r\n" +
+                "      alert(\"로그인을 하지 않았습니다. 로그인페이지로 이동합니다..\");\r\n" +
+                "      location.href='login.jsp';\r\n" +
+                "   </script>";
+        out.println(str);
+    }
+%>
+<%
+    Connection con = null;
+    Statement stmt = null;
+    ResultSet rs = null;
+
+    String id, pw, name, email, address, phone, gender, news, sms;
+    Timestamp birth;
+    String sql = "select * from lms_member";
+<% try {
+    Class.forName("oracle.jdbc.OracleDriver");
+    con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "ora_user", "1234");
+    stmt = con.createStatement();
+    rs = stmt.executeQuery(sql);
+
+    while(rs.next()){
+        id= rs.getString("id");
+        pw = rs.getString("pw");
+        name = rs.getString("name");
+        email = rs.getString("email");
+        address = rs.getString("address");
+        phone= rs.getString("phone");
+        birth = rs.getTimestamp("birth");
+        gender = rs.getString("gender");
+        news = rs.getString("news");
+        sms = rs.getString("sms");
+    }
+
+
+%>
+<%
+    } catch (Exception e) {
+        e.printStackTrace();
+    } finally {
+        try {
+            if (rs != null) rs.close();
+            if (stmt != null) stmt.close();
+            if (con != null) con.close();
+        } catch (Exception e2) {
+            e2.printStackTrace();
+        }
+    }
+
+
+%>
 
 <!-- 관리자 헤더 입니다------------------------------------------------------------------------>
 <header id="topfix">

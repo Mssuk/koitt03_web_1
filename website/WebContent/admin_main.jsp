@@ -27,43 +27,8 @@
     String id, pw, name, email, address, phone, gender, news, sms;
     Timestamp birth;
     String sql = "select * from lms_member";
-<% try {
-    Class.forName("oracle.jdbc.OracleDriver");
-    con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "ora_user", "1234");
-    stmt = con.createStatement();
-    rs = stmt.executeQuery(sql);
-
-    while(rs.next()){
-        id= rs.getString("id");
-        pw = rs.getString("pw");
-        name = rs.getString("name");
-        email = rs.getString("email");
-        address = rs.getString("address");
-        phone= rs.getString("phone");
-        birth = rs.getTimestamp("birth");
-        gender = rs.getString("gender");
-        news = rs.getString("news");
-        sms = rs.getString("sms");
-    }
-
 
 %>
-<%
-    } catch (Exception e) {
-        e.printStackTrace();
-    } finally {
-        try {
-            if (rs != null) rs.close();
-            if (stmt != null) stmt.close();
-            if (con != null) con.close();
-        } catch (Exception e2) {
-            e2.printStackTrace();
-        }
-    }
-
-
-%>
-
 <!-- 관리자 헤더 입니다------------------------------------------------------------------------>
 <header id="topfix">
     <div id="header">
@@ -176,69 +141,68 @@
                     </tr>
                     </thead>
                     <tbody>
+
+                    <% try {
+                        Class.forName("oracle.jdbc.OracleDriver");
+                        con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "ora_user", "1234");
+                        stmt = con.createStatement();
+                        rs = stmt.executeQuery(sql);
+
+                        while (rs.next()) {
+                            id = rs.getString("id");
+                            pw = rs.getString("pw");
+                            name = rs.getString("name");
+                            email = rs.getString("email");
+                            address = rs.getString("address");
+                            phone = rs.getString("phone");
+                            birth = rs.getTimestamp("birth");
+                            gender = rs.getString("gender");
+                            news = rs.getString("news");
+                            sms = rs.getString("sms");
+                    %>
                     <tr>
-                        <td class="td_id">Honggildong123</td>
-                        <td class="td-name">홍길동</td>
-                        <td class="td_nick"><img src="images/admin_main/naver_92e40906.gif"
-                                                 style="vertical-align: middle; margin-right: 2px">길동이짱123
+                        <td class="td_id"><%=id%>
                         </td>
-                        <td class="td_num">2</td>
-                        <td class="td_point">1,000</td>
-                        <td class="td_bool">예</td>
-                        <td class="td_bool">예</td>
-                        <td class="td_bool">아니오</td>
-                        <td class="td_bool">아니오</td>
-                    </tr>
-                    <tr>
-                        <td class="td_id">lildong123</td>
-                        <td class="td-name">이순신</td>
-                        <td class="td_nick">이순신123</td>
-                        <td class="td_num">1</td>
-                        <td class="td_point">1,700</td>
-                        <td class="td_bool">아니오</td>
-                        <td class="td_bool">아니오</td>
-                        <td class="td_bool">아니오</td>
-                        <td class="td_bool">아니오</td>
-                    </tr>
-                    <tr>
-                        <td class="td_id">ggigang123</td>
-                        <td class="td-name">가나다</td>
-                        <td class="td_nick">gana123</td>
-                        <td class="td_num">2</td>
-                        <td class="td_point">1,500</td>
-                        <td class="td_bool">아니오</td>
-                        <td class="td_bool">예</td>
-                        <td class="td_bool">예</td>
-                        <td class="td_bool">아니오</td>
-                    </tr>
-                    <tr>
-                        <td class="td_id">Honggildong123</td>
-                        <td class="td-name">홍길동</td>
-                        <td class="td_nick"><img src="https://demo.sir.kr/gnuboard5/data/member/na/naver_92e40906.gif"
-                                                 style="vertical-align: middle; margin-right: 2px">길동이짱123
+                        <td class="td-name"><%=pw%>
                         </td>
-                        <td class="td_num">2</td>
-                        <td class="td_point">1,000</td>
-                        <td class="td_bool">예</td>
-                        <td class="td_bool">예</td>
-                        <td class="td_bool">아니오</td>
-                        <td class="td_bool">아니오</td>
+                        <td class="td_nick"><%=name%>
+                        </td>
+                        <td class="td_num"><%=email%>
+                        </td>
+                        <td class="td_point"><%=address%>
+                        </td>
+                        <td class="td_bool"><%=phone%>
+                        </td>
+                        <td class="td_bool"><%=birth%>
+                        </td>
+                        <td class="td_bool"><%=gender%>
+                        </td>
+                        <td class="td_bool"><%=news%>,<%=sms%>
+                        </td>
                     </tr>
-                    <tr>
-                        <td class="td_id">Honggildong123</td>
-                        <td class="td_name">홍길동</td>
-                        <td class="td_nick">길동이짱123</td>
-                        <td class="td_num">2</td>
-                        <td class="td_point">1,000</td>
-                        <td class="td_bool">예</td>
-                        <td class="td_bool">예</td>
-                        <td class="td_bool">아니오</td>
-                        <td class="td_bool">아니오</td>
-                    </tr>
+
+                    <%
+                            }
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        } finally {
+                            try {
+                                if (rs != null) rs.close();
+                                if (stmt != null) stmt.close();
+                                if (con != null) con.close();
+                            } catch (Exception e2) {
+                                e2.printStackTrace();
+                            }
+                        }
+
+                    %>
                     </tbody>
                 </table>
             </div>
-            <div class="btn_list">
+            <div class="btn_list" style="display: inline-block ; float: right">
+                <a href="join.jsp">회원정보추가</a>
+            </div>
+            <div class="btn_list" style="display: inline-block; float: right; padding-right: 15px">
                 <a href="manage_main.html">회원 전체보기</a>
             </div>
         </article>

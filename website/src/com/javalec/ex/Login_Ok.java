@@ -41,20 +41,17 @@ public class Login_Ok extends HttpServlet {
             con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "ora_user", "1234");
             stmt = con.createStatement();
             rs = stmt.executeQuery(sql);
-
             if (rs.next()) {
                 //데이터가 있는 경우
                 //id, pw 데이터
-                while (rs.next()) {
-                    id = rs.getString("id");
-                    pw = rs.getString("pw");
-                    //세션 추가
-                    HttpSession session = request.getSession();
-                    session.setAttribute("user_id", id);
-                    session.setAttribute("user_pw", pw);
-                    session.setAttribute("authUser", id);
-                    response.sendRedirect("admin_main.jsp");
-                }
+                id = rs.getString("id");
+                pw = rs.getString("pw");
+                //세션추가
+                HttpSession session = request.getSession();
+                session.setAttribute("user_id", id);
+                session.setAttribute("user_pw", pw);
+                session.setAttribute("authUser", id);
+                response.sendRedirect("admin_main.jsp");
             } else {
                 //데이터가 없는 경우
                 System.out.println("안대");

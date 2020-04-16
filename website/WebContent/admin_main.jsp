@@ -6,6 +6,12 @@
     <meta charset="UTF-8">
     <title>관리자 메인</title>
     <link rel="stylesheet" href="css/admin_main.css">
+    <style>
+        .td_id a:hover{
+            color: #5a8cc5;
+            border-bottom: #8B8075 2px dashed;
+        }
+    </style>
 </head>
 <body>
 <%
@@ -161,7 +167,7 @@
                             sms = rs.getString("sms");
                     %>
                     <tr>
-                        <td class="td_id"><%=id%>
+                        <td class="td_id"><a href="modify.jsp?id=<%=id%>"><%=id%></a>
                         </td>
                         <td class="td-name"><%=pw%>
                         </td>

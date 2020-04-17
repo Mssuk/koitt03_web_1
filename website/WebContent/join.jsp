@@ -9,7 +9,7 @@
 <%
     String authUser = (String)session.getAttribute("authUser");
     if(authUser == null){
-        out.println("<script>alert('로그인이 되어있지 않습니다. 로그인을 해주세요');");
+        out.println("<script>alert('로그인이 되어 있지 않습니다. 로그인을 해주세요');");
         out.println("location.href = 'login.jsp';</script>");
     }
 %>

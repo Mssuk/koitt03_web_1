@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="css/manage_main.css">
 	<link rel="stylesheet" href="css/admin_header.css">
+	<link rel="stylesheet" href="css/admin_main.css">
+	<link rel="stylesheet" href="css/main_notice.css">
+	<link rel="stylesheet" href="css/admin_board.css">
 	<script src="js/admin_left_nav_function.js"></script>
 	<title>관리페이지</title>
 </head>
@@ -118,9 +121,256 @@
 					</div>
 				</div>
 				<!--------- 좌측메뉴 ---------->
+				<!--------- 컨텐츠 ----------->
+				
+		<div id="contentArea">
+		    <div class="sub_title_bar">
+		        <ul class="ptit">
+		            <li>
+		          	      공지사항
+		                <div class="float_r">
+		                    <a href="#"><p class="listed"></p></a>
+		                </div>
+		                <div class="float_r">
+		                    <a href="#"><p class="favorite"></p></a>
+		                </div>
+		                <div></div>
+		            </li>
+		        </ul>
+		    </div>
+			<div class="sub_content_area">
+				<div id="member_manage">
+					 <article>
+			            <h2>신규가입회원 5건 목록</h2>
+			            <div class="local_desc">총회원수 2,221명 중 차단 0명, 탈퇴 : 34명</div>
+			            <div class="tbl_n1">
+			                <table>
+			                    <thead>
+			                    <tr>
+			                        <th>회원아이디</th>
+			                        <th>이름</th>
+			                        <th>닉네임</th>
+			                        <th>권한</th>
+			                        <th>포인트</th>
+			                        <th>수신</th>
+			                        <th>공개</th>
+			                        <th>인증</th>
+			                        <th>차단</th>
+			                    </tr>
+			                    </thead>
+			                    <tbody>
+			                    <tr>
+			                        <td class="td_id">Honggildong123</td>
+			                        <td class="td-name">홍길동</td>
+			                        <td class="td_nick"><img src="images/admin_main/naver_92e40906.gif"
+			                                                 style="vertical-align: middle; margin-right: 2px">길동이짱123
+			                        </td>
+			                        <td class="td_num">2</td>
+			                        <td class="td_point">1,000</td>
+			                        <td class="td_bool">예</td>
+			                        <td class="td_bool">예</td>
+			                        <td class="td_bool">아니오</td>
+			                        <td class="td_bool">아니오</td>
+			                    </tr>
+			                    <tr>
+			                        <td class="td_id">lildong123</td>
+			                        <td class="td-name">이순신</td>
+			                        <td class="td_nick">이순신123</td>
+			                        <td class="td_num">1</td>
+			                        <td class="td_point">1,700</td>
+			                        <td class="td_bool">아니오</td>
+			                        <td class="td_bool">아니오</td>
+			                        <td class="td_bool">아니오</td>
+			                        <td class="td_bool">아니오</td>
+			                    </tr>
+			                    <tr>
+			                        <td class="td_id">ggigang123</td>
+			                        <td class="td-name">가나다</td>
+			                        <td class="td_nick">gana123</td>
+			                        <td class="td_num">2</td>
+			                        <td class="td_point">1,500</td>
+			                        <td class="td_bool">아니오</td>
+			                        <td class="td_bool">예</td>
+			                        <td class="td_bool">예</td>
+			                        <td class="td_bool">아니오</td>
+			                    </tr>
+			                    <tr>
+			                        <td class="td_id">Honggildong123</td>
+			                        <td class="td-name">홍길동</td>
+			                        <td class="td_nick"><img src="https://demo.sir.kr/gnuboard5/data/member/na/naver_92e40906.gif"
+			                                                 style="vertical-align: middle; margin-right: 2px">길동이짱123
+			                        </td>
+			                        <td class="td_num">2</td>
+			                        <td class="td_point">1,000</td>
+			                        <td class="td_bool">예</td>
+			                        <td class="td_bool">예</td>
+			                        <td class="td_bool">아니오</td>
+			                        <td class="td_bool">아니오</td>
+			                    </tr>
+			                    <tr>
+			                        <td class="td_id">Honggildong123</td>
+			                        <td class="td_name">홍길동</td>
+			                        <td class="td_nick">길동이짱123</td>
+			                        <td class="td_num">2</td>
+			                        <td class="td_point">1,000</td>
+			                        <td class="td_bool">예</td>
+			                        <td class="td_bool">예</td>
+			                        <td class="td_bool">아니오</td>
+			                        <td class="td_bool">아니오</td>
+			                    </tr>
+			                    </tbody>
+			                </table>
+			            </div>
+			            <div class="btn_list">
+			                <a href="manage_main.html">회원 전체보기</a>
+			            </div>
+			        </article>
+			        <article>
+			        	<h2>최근게시물</h2>
+			            <div class="tbl_n1">
+			                <table>
+			                    <thead>
+			                    <tr>
+			                        <th>분류</th>
+			                        <th>게시판</th>
+			                        <th>제목</th>
+			                        <th>이름</th>
+			                        <th>일시</th>
+			                    </tr>
+			                    </thead>
+			                    <tbody>
+			                    <tr>
+			                        <td class="td_category"><b>공지</b></td>
+			                        <td class="td_category"><b>이벤트게시판</b></td>
+			                        <td class="td_nick"><b>[쿡킷]3월에디션_삼시세끼~극뽁기!!</b></td>
+			                        <td class="td_name"><img src="https://demo.sir.kr/gnuboard5/data/member/na/naver_92e40906.gif"
+			                                                 style="vertical-align: middle; margin-right: 2px">관리자
+			                        </td>
+			                        <td class="td_date">2020-03-19</td>
+			                    </tr>
+			                    <tr>
+			                        <td class="td_category">문의</td>
+			                        <td class="td_category">Q&A</td>
+			                        <td class="td_nick">문의드립니다</td>
+			                        <td class="td_name"><img src="https://demo.sir.kr/gnuboard5/data/member/na/naver_92e40906.gif"
+			                                                 style="vertical-align: middle; margin-right: 2px">홍길동
+			                        </td>
+			                        <td class="td_date">2020-03-19</td>
+			                    </tr>
+			                    <tr>
+			                        <td class="td_category">리뷰</td>
+			                        <td class="td_category">리뷰게시판</td>
+			                        <td class="td_nick">맛있게 잘먹었습니다</td>
+			                        <td class="td_name"><img src="https://demo.sir.kr/gnuboard5/data/member/na/naver_92e40906.gif"
+			                                                 style="vertical-align: middle; margin-right: 2px">이순신
+			                        </td>
+			                        <td class="td_date">2020-03-19</td>
+			                    </tr>
+			                    <tr>
+			                        <td class="td_category"><b>공지</b></td>
+			                        <td class="td_category"><b>공지사항</b></td>
+			                        <td class="td_nick"><b>미리보는 쿡킷 전체 메뉴 (3月)</b></td>
+			                        <td class="td_name"><img src="https://demo.sir.kr/gnuboard5/data/member/na/naver_92e40906.gif"
+			                                                 style="vertical-align: middle; margin-right: 2px">관리자
+			                        </td>
+			                        <td class="td_date">2020-03-19</td>
+			                    </tr>
+			                    </tbody>
+			                </table>
+			            </div>
+			            <div class="btn_list">
+			                <a href="#">최근게시물 더보기</a>
+			            </div>
+			        </article>
+			
+			        <article>
+			            <h2>최근포인트 발생내역</h2>
+			            <div class="local_desc">전체 8,772건 중 5건 목록</div>
+			            <div class="tbl_n1">
+			                <table>
+			                    <thead>
+			                    <tr>
+			                        <th>회원아이디</th>
+			                        <th>이름</th>
+			                        <th>닉네임</th>
+			                        <th>일시</th>
+			                        <th>포인트 내용</th>
+			                        <th>적립포인트</th>
+			                        <th>보유포인트</th>
+			                    </tr>
+			                    </thead>
+			                    <tbody>
+			                    <tr>
+			                        <td class="td_id">Honggildong123</td>
+			                        <td class="td-name">홍길동</td>
+			                        <td class="td_nick"><img src="https://demo.sir.kr/gnuboard5/data/member/na/naver_92e40906.gif"
+			                                                 style="vertical-align: middle; margin-right: 2px">길동이짱123
+			                        </td>
+			                        <td class="td_date_time">2020-03-19 12:19:00</td>
+			                        <td>회원가입 포인트</td>
+			                        <td class="td_point">200</td>
+			                        <td class="td_point">1,000</td>
+			
+			
+			                    </tr>
+			                    <tr>
+			                        <td class="td_id">lildong123</td>
+			                        <td class="td-name">이순신</td>
+			                        <td class="td_nick">이순신123</td>
+			                        <td class="td_date_time">2020-03-19 12:19:00</td>
+			                        <td>구매 적립 포인트</td>
+			                        <td class="td_point">100</td>
+			                        <td class="td_point">1,700</td>
+			
+			                    </tr>
+			                    <tr>
+			                        <td class="td_id">ggigang123</td>
+			                        <td class="td-name">가나다</td>
+			                        <td class="td_nick">gana123</td>
+			                        <td class="td_date_time">2020-03-19 12:19:00</td>
+			                        <td>구매 적립 포인트</td>
+			                        <td class="td_point">100</td>
+			                        <td class="td_point">1,500</td>
+			
+			
+			                    </tr>
+			                    <tr>
+			                        <td class="td_id">Honggildong123</td>
+			                        <td class="td-name">홍길동</td>
+			                        <td class="td_nick"><img src="https://demo.sir.kr/gnuboard5/data/member/na/naver_92e40906.gif"
+			                                                 style="vertical-align: middle; margin-right: 2px">길동이짱123
+			                        </td>
+			                        <td class="td_date_time">2020-03-19 12:19:00</td>
+			                        <td>구매 적립 포인트</td>
+			                        <td class="td_point">100</td>
+			                        <td class="td_point">1,000</td>
+			
+			
+			                    </tr>
+			                    <tr>
+			                        <td class="td_id">Honggildong123</td>
+			                        <td class="td_name">홍길동</td>
+			                        <td class="td_nick">길동이짱123</td>
+			                        <td class="td_date_time">2020-03-19 12:19:00</td>
+			                        <td>구매 적립 포인트</td>
+			                        <td class="td_point">100</td>
+			                        <td class="td_point">1,100</td>
+			                    </tr>
+			                    </tbody>
+			                </table>
+			            </div>
+			            <div class="btn_list">
+			                <a href="#">포인트내역 전체보기</a>
+			            </div>
+			        </article>
+			        <article id="foot">
+			            <p>© COOKIT ALL RIGHTS RESERVED</p>
+			        </article>
+		        </div>
 			</div>
+			<!-- id="sub_content_area" -->
 		</div>
-
+		<!-- id="contentArea" -->
 	</div>
 </body>
 </html>

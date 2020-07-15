@@ -42,4 +42,4 @@ section>article>form>div>ul.else_login>li:nth-child(4)>a{background-position: -1
 section>article>form>div>ul.log_t_box{box-sizing: border-box;background: #f7f7f7;padding:20px 32px;font-size: 13px;line-height: 21px;    word-break: keep-all; word-wrap: break-word;}
 section>article>form>div>ul>li>strong{font-size: 18px;line-height: 27px;}
 
-section>article>form>div:nth-child(3) {display: none;}
+section>article>form>div#m_login2 {display: none;}

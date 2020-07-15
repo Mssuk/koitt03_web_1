@@ -519,14 +519,22 @@ background-position: -454px -80px;
     line-height: 24px;
 }
 
-.de_tit_wrap{
+.de_tit_wrap {
 	color: #101010;
     font-weight: 700;
     font-size: 22px;
     line-height: 32px;
+    margin-top:80px;
     padding-bottom: 16px;
     border-bottom: 2px solid #202020;
 }
+.de_tit_wrap span{
+	float: right;
+}
+.detail_view_box03>.con_wrap{
+	margin-bottom:15px;
+}
+
 
 
 .clear{

@@ -30,19 +30,19 @@ function no_member(){
 	var test_num="ck123456789";
 	var test_pw="123456789";
 	
-	if(login_form.sail_number.value==""){
+	if(login_form2.sail_number.value==""){
 		alert('주문번호를 입력해주세요');
-		login_form.sail_number.focus();
+		login_form2.sail_number.focus();
 		return false;
 	}
-	if(login_form.sail_pw.value==""){
+	if(login_form2.sail_pw.value==""){
 		alert('비밀번호를 입력해주세요');
-		login_form.sail_pw.focus();
+		login_form2.sail_pw.focus();
 		return false;
 	}
-	if(!(test_num==login_form.sail_number.value&&test_pw==login_form.sail_pw.value)){
+	if(!(test_num==login_form2.sail_number.value&&test_pw==login_form2.sail_pw.value)){
 		alert('일치하는 정보가 없습니다. 확인후 입력하세오');
-		login_form.sail_number.focus();
+		login_form2.sail_number.focus();
 		return false;
 	}
 	alert('주문내역 :황태동태찌개 2ea 이용해주셔서 감사합니다');
